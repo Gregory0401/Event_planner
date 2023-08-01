@@ -1,0 +1,36 @@
+.label {
+  margin-right: 14px;
+  color: rgb(100, 100, 101);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.select {
+  width: 90px;
+  height: 25px;
+  background-color: rgb(192 127 0);
+  border-radius: 5px;
+  color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.button {
+  width: 100px;
+  height: 35px;
+  color: #fff;
+}
+.text {
+  color: #fff;
+}
+@media Screen and (min-width: 320px) {
+  .container {
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+}
+@media Screen and (min-width: 768px) {
+  .container {
+    width: 280px;
+    margin-left: 50px;
+    margin-top: 25px;
+  }
+}

@@ -1,0 +1,118 @@
+.card {
+  position: relative;
+  width: 230px;
+  border-radius: 10px;
+  background-color: rgb(225 209 179);
+  list-style-type: none;
+  padding: 20px;
+}
+.item {
+  max-width: 250px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  word-wrap: break-word;
+}
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.link {
+  text-decoration: none;
+}
+.button {
+  height: 25px;
+  border-radius: 5px;
+  margin-right: 20px;
+  background-color: rgb(192 127 0);
+  color: rgb(1, 1, 1);
+  border: none;
+  cursor: pointer;
+}
+.link_button {
+  text-decoration: none;
+  color: rgb(1, 1, 1);
+}
+.button:hover {
+  color: rgb(255, 255, 255);
+}
+.link_button:hover {
+  color: rgb(255, 255, 255);
+}
+.text {
+  text-align: center;
+  font-size: 36px;
+  color: rgb(100, 100, 101);
+  margin-top: 50px;
+}
+.p_height {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  width: 50px;
+  height: 60px;
+  background-image: url(../../public/height.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: height 1s infinite;
+  scale: 1.4;
+}
+@keyframes height {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.p_medium {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  width: 30px;
+  height: 60px;
+  background-image: url(../../public/medium.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.p_low {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  width: 30px;
+  height: 60px;
+  background-image: url(../../public/low.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media Screen and (min-width: 320px) {
+  .card {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .containerM {
+    display: block;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px 10px 20px;
+  }
+}
+
+@media Screen and (min-width: 768px) {
+  .card {
+    margin: 0;
+  }
+  .containerM {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-gap: 20px;
+    gap: 20px;
+  }
+}
+@media Screen and (min-width: 1280px) {
+  .containerM {
+    padding: 30px 40px 30px 40px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr;
+  }
+}
