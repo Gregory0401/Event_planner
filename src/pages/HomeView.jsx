@@ -30,6 +30,7 @@ function HomeView({ tasks }) {
     if (value2 === "low") {
       return value2 === task.priority && <EventCard task={task} />;
     }
+    return console.log(1);
   });
 
   const nameCategory = tasks.map((task) => {
@@ -48,6 +49,7 @@ function HomeView({ tasks }) {
     if (value === "purchases") {
       return value === task.category && <EventCard task={task} />;
     }
+    return console.log(1);
   });
 
   return (

@@ -6,7 +6,6 @@ import CreateEvent from "./pages/CreateEvent";
 import DetailsEvent from "./pages/DetailsEvent";
 import AppBar from "./components/AppBar";
 import { nanoid } from "nanoid";
-import s from "./components/AppBar";
 import Footer from "./components/Footer";
 
 function App() {
