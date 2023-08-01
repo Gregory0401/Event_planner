@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.d534dabd.css",
-    "main.js": "/static/js/main.e778bde0.js",
-    "static/media/low.png": "/static/media/low.45e708d74d376b913faa.png",
-    "static/media/medium.png": "/static/media/medium.b8e861da67b6ccf45a0a.png",
-    "static/media/height.png": "/static/media/height.b6e5a172502fe43be2ea.png",
-    "static/media/git.png": "/static/media/git.29a097258fd323d6baad.png",
-    "static/media/telegram.png": "/static/media/telegram.50b3381d5eaf5b389a35.png",
-    "index.html": "/index.html",
-    "main.d534dabd.css.map": "/static/css/main.d534dabd.css.map",
-    "main.e778bde0.js.map": "/static/js/main.e778bde0.js.map"
+    "main.css": "/Event_planner/static/css/main.26a469ba.css",
+    "main.js": "/Event_planner/static/js/main.e778bde0.js",
+    "static/media/low.png": "/Event_planner/static/media/low.45e708d74d376b913faa.png",
+    "static/media/medium.png": "/Event_planner/static/media/medium.b8e861da67b6ccf45a0a.png",
+    "static/media/height.png": "/Event_planner/static/media/height.b6e5a172502fe43be2ea.png",
+    "static/media/git.png": "/Event_planner/static/media/git.29a097258fd323d6baad.png",
+    "static/media/telegram.png": "/Event_planner/static/media/telegram.50b3381d5eaf5b389a35.png",
+    "index.html": "/Event_planner/index.html",
+    "main.26a469ba.css.map": "/Event_planner/static/css/main.26a469ba.css.map",
+    "main.e778bde0.js.map": "/Event_planner/static/js/main.e778bde0.js.map"
   },
   "entrypoints": [
-    "static/css/main.d534dabd.css",
+    "static/css/main.26a469ba.css",
     "static/js/main.e778bde0.js"
   ]
 }
