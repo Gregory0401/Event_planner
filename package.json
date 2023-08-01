@@ -1,7 +1,8 @@
 {
-  "name": "event-todo",
+  "name": "event_planner",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gregory0401.github.io/Event_planner/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.17.0",
