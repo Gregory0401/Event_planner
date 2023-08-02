@@ -1,8 +1,53 @@
+.high {
+  color: rgba(255, 43, 119, 1);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.medium {
+  color: rgba(226, 163, 0, 1);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.low {
+  color: rgba(107, 212, 117, 1);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.button {
+  width: 114px;
+  height: 40px;
+  padding: 10px 24px 10px 24px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(123, 97, 255, 1);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
 @media Screen and (min-width: 320px) {
   .card {
+    position: relative;
     width: 232px;
     height: 480px;
     border-radius: 12px;
+    padding: 0;
+    list-style-type: none;
     margin-right: auto;
     margin-left: auto;
     box-shadow: 2px 4px 9px 0px rgba(166, 141, 174, 0.28);
@@ -12,6 +57,83 @@
     display: block;
     background-color: rgb(0, 0, 0);
     padding: 10px 20px 10px 20px;
+  }
+  .art {
+    width: 232px;
+    height: 296px;
+    background-image: url(../../image/Rectangle\ 330.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .business {
+    width: 232px;
+    height: 380px;
+    background-image: url(../../image/Rectangle\ 347.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .info {
+    position: absolute;
+    height: 22px;
+    top: 12px;
+    left: 12px;
+    display: flex;
+  }
+  .category {
+    height: 22px;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    margin-right: 12px;
+    color: rgba(123, 97, 255, 1);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .priority {
+    height: 22px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .title {
+    height: 48px;
+    padding: 16px, 16px, 8px, 16px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(28, 27, 31, 1);
+  }
+  .item {
+    position: absolute;
+    top: 256px;
+    left: 0;
+    width: 302px;
+    height: 40px;
+    padding: 8px, 16px, 8px, 16px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(123, 97, 255, 1);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .description {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(73, 69, 79, 1);
   }
 }
 
@@ -28,6 +150,17 @@
     grid-gap: 20px;
     gap: 20px;
   }
+  .art {
+    width: 332px;
+    height: 296px;
+  }
+  .business {
+    width: 332px;
+    height: 296px;
+  }
+  .item {
+    width: 332px;
+  }
 }
 @media Screen and (min-width: 1280px) {
   .containerM {
@@ -39,5 +172,17 @@
     width: 302px;
     height: 480px;
     margin: 0;
+    padding: 0;
+  }
+  .art {
+    width: 302px;
+    height: 296px;
+  }
+  .art {
+    width: 302px;
+    height: 296px;
+  }
+  .item {
+    width: 302px;
   }
 }

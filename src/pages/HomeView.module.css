@@ -28,9 +28,13 @@
     /* margin-right: 200px; */
   }
   .buttonAdd {
+    padding: 16px;
+    border-radius: 8px;
     width: 56px;
     height: 56px;
     border: none;
+    background-color: rgba(123, 97, 255, 1);
+    box-shadow: 2px 4px 9px 0px rgba(166, 141, 174, 0.28);
   }
   .link_button {
     font-family: Poppins;
