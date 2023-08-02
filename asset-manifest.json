@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/Event_planner/static/css/main.ac54ba61.css",
-    "main.js": "/Event_planner/static/js/main.6edfc45c.js",
+    "main.css": "/Event_planner/static/css/main.66f061cc.css",
+    "main.js": "/Event_planner/static/js/main.7677bf0c.js",
     "static/media/Geo Wave 22.png": "/Event_planner/static/media/Geo Wave 22.2d87802889d8ca9566dc.png",
+    "static/media/Rectangle 347.png": "/Event_planner/static/media/Rectangle 347.c562ee0abf166f7ce72c.png",
+    "static/media/Rectangle 330.png": "/Event_planner/static/media/Rectangle 330.1c87b6c3ade428371ced.png",
     "index.html": "/Event_planner/index.html",
-    "main.ac54ba61.css.map": "/Event_planner/static/css/main.ac54ba61.css.map",
-    "main.6edfc45c.js.map": "/Event_planner/static/js/main.6edfc45c.js.map"
+    "main.66f061cc.css.map": "/Event_planner/static/css/main.66f061cc.css.map",
+    "main.7677bf0c.js.map": "/Event_planner/static/js/main.7677bf0c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac54ba61.css",
-    "static/js/main.6edfc45c.js"
+    "static/css/main.66f061cc.css",
+    "static/js/main.7677bf0c.js"
   ]
 }
