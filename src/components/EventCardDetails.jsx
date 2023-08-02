@@ -1,22 +1,22 @@
 import s from '../pages/DetailsEvent.module.css';
 import { NavLink } from 'react-router-dom';
-import React, { useState } from 'react';
+import React from 'react';
 
 function EventCardDetails({ task, deleteTask, card }) {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
   console.log(card);
 
   //   const changeFocus = () => {
   //     setOpen(true);
   //   };
   // const detailsEvent = id => {};
-  const close = () => {
-    setOpen(false);
-  };
+  // const close = () => {
+  //   setOpen(false);
+  // };
 
-  const changeFocus = () => {
-    setOpen(true);
-  };
+  // const changeFocus = () => {
+  //   setOpen(true);
+  // };
 
   return (
     <div>

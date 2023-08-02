@@ -77,30 +77,30 @@ function App() {
     localStorage.setItem('card', JSON.stringify(tasks));
   }, [tasks]);
 
-  const handleChangeDescriptionEdit = e => {
-    setDescription(e.target.value);
-    // console.log(e.target.value);
-  };
-  const handleChangeDateEdit = e => {
-    setDate(e.target.value);
-    editTask(date);
-  };
-  const handleChangeEdit = e => {
-    setName(e.target.value);
-  };
+  // const handleChangeDescriptionEdit = e => {
+  //   setDescription(e.target.value);
+  //   // console.log(e.target.value);
+  // };
+  // const handleChangeDateEdit = e => {
+  //   setDate(e.target.value);
+  //   editTask(date);
+  // };
+  // const handleChangeEdit = e => {
+  //   setName(e.target.value);
+  // };
 
-  function handleSubmit2(e) {
-    e.preventDefault();
-    // console.log(name, date, description);
-    editTask(name, date, description);
-  }
+  // function handleSubmit2(e) {
+  //   e.preventDefault();
+  //   // console.log(name, date, description);
+  //   editTask(name, date, description);
+  // }
 
-  function editTask2(id) {
-    editTask(id);
-  }
-  function editTask(id, name, date, description) {
-    console.log(id, name, date, description);
-  }
+  // function editTask2(id) {
+  //   editTask(id);
+  // }
+  // function editTask(id, name, date, description) {
+  //   console.log(id, name, date, description);
+  // }
   return (
     <>
       <AppBar />
