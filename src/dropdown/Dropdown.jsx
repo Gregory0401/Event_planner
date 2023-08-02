@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import s from "./Dropdown.module.css";
+import React, { useState } from 'react';
+import s from './Dropdown.module.css';
 
 export const Dropdown = ({ handleSelected, value }) => {
-  const [selectedValue, setSelectedValue] = useState("showAll");
+  const [selectedValue, setSelectedValue] = useState('showAll');
 
-  const handleChange = (event) => {
+  const handleChange = event => {
     setSelectedValue(event.target.value);
     handleSelected(event.target.value);
   };
@@ -12,9 +12,7 @@ export const Dropdown = ({ handleSelected, value }) => {
   return (
     <>
       <div className={s.container}>
-        <label htmlFor="tweets" className={s.label}>
-          Select category Event 👉
-        </label>
+        <label htmlFor="tweets" className={s.label}></label>
         <select
           onChange={handleChange}
           value={selectedValue}
@@ -25,17 +23,17 @@ export const Dropdown = ({ handleSelected, value }) => {
           <option value="showAll" className={s.option}>
             Show all
           </option>
-          <option value="work" className={s.option}>
-            Work
+          <option value="music" className={s.option}>
+            Music
           </option>
-          <option value="purchases" className={s.option}>
-            Purchases
+          <option value="art" className={s.option}>
+            Art
           </option>
-          <option value="home" className={s.option}>
-            Home
+          <option value="business" className={s.option}>
+            Business
           </option>
-          <option value="other" className={s.option}>
-            Other
+          <option value="party" className={s.option}>
+            Party
           </option>
         </select>
       </div>

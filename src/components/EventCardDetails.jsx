@@ -1,22 +1,15 @@
-import s from "../pages/DetailsEvent.module.css";
-import { NavLink } from "react-router-dom";
-import React, { useState } from "react";
+import s from '../pages/DetailsEvent.module.css';
+import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
 
-function EventCardDetails({
-  task,
-  deleteTask,
-  handleChangeDescriptionEdit,
-  handleChangeDateEdit,
-  handleChangeEdit,
-  handleSubmit2,
-  editTask2,
-}) {
+function EventCardDetails({ task, deleteTask, card }) {
   const [open, setOpen] = useState(false);
+  console.log(card);
 
   //   const changeFocus = () => {
   //     setOpen(true);
   //   };
-
+  // const detailsEvent = id => {};
   const close = () => {
     setOpen(false);
   };
@@ -25,60 +18,18 @@ function EventCardDetails({
     setOpen(true);
   };
 
-  
   return (
     <div>
       <ul className={s.card} key={task.id}>
         <li className={s.title}>{task.category}</li>
-        {open ? (
-          <>
-            <form onSubmit={handleSubmit2}>
-              <ul>
-                <li>
-                  <label className={s.label}>Name event</label>
-                  <input
-                    type="text"
-                    className={s.input}
-                    name="text"
-                    defaultValue={task.name}
-                    onChange={handleChangeEdit}
-                  />
-                </li>
-                <li>
-                  <label className={s.label}>Date event</label>
-                  <input
-                    type="text"
-                    className={s.input}
-                    name="date"
-                    defaultValue={task.date}
-                    onChange={handleChangeDateEdit}
-                  />
-                </li>
-                <li>
-                  <label className={s.label}>Comment event</label>
-                  <textarea
-                    cols="20"
-                    rows="9"
-                    autoComplete="off"
-                    defaultValue={task.description}
-                    onChange={handleChangeDescriptionEdit}
-                  ></textarea>
-                </li>
-              </ul>
-              <button type="submit">Edit</button>
-              <button type="button" onClick={close}>
-                Close
-              </button>
-            </form>
-          </>
-        ) : (
-          <li className={s.title}>{task.name}</li>
-        )}
+
+        <li className={s.title}>{task.name}</li>
+
         <li className={s.item}>{task.date}</li>
         <li className={s.item}>{task.description}</li>
-        {task.priority === "height" && <li className={s.p_height}></li>}
-        {task.priority === "medium" && <li className={s.p_medium}></li>}
-        {task.priority === "low" && <li className={s.p_low}></li>}
+        {task.priority === 'high' && <li className={s.p_height}></li>}
+        {task.priority === 'medium' && <li className={s.p_medium}></li>}
+        {task.priority === 'low' && <li className={s.p_low}></li>}
         <button
           onClick={() => {
             deleteTask(task.id);
@@ -89,7 +40,7 @@ function EventCardDetails({
             Delete
           </NavLink>
         </button>
-        <button
+        {/* <button
           className={s.button}
           onClick={() => {
             changeFocus();
@@ -97,7 +48,7 @@ function EventCardDetails({
           }}
         >
           Edit
-        </button>
+        </button> */}
       </ul>
     </div>
   );

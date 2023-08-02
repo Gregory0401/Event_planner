@@ -22,15 +22,15 @@
 }
 @media Screen and (min-width: 320px) {
   .container {
-    width: 280px;
-    margin: 0 auto;
-    margin-top: 15px;
+    width: 56px;
+    height: 56px;
+    margin: 0;
   }
 }
 @media Screen and (min-width: 768px) {
   .container {
-    width: 280px;
-    margin-left: 50px;
-    margin-top: 25px;
+    width: 143px;
+    height: 56px;
+    margin: 0;
   }
 }

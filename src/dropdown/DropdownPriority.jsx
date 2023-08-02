@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import s from "./Dropdown.module.css";
+import React, { useState } from 'react';
+import s from './Dropdown.module.css';
 
 export const DropdownPriority = ({ handleSelectedPriority, value2 }) => {
-  const [selectedValue, setSelectedValue] = useState("showAll");
+  const [selectedValue, setSelectedValue] = useState('showAll');
 
-  const handleChange = (event) => {
+  const handleChange = event => {
     setSelectedValue(event.target.value);
     handleSelectedPriority(event.target.value);
   };
@@ -12,7 +12,7 @@ export const DropdownPriority = ({ handleSelectedPriority, value2 }) => {
   return (
     <>
       <div className={s.container}>
-        <label className={s.label}>Select Priority👉</label>
+        <label className={s.label}></label>
         <select
           onChange={handleChange}
           value={selectedValue}
@@ -21,8 +21,8 @@ export const DropdownPriority = ({ handleSelectedPriority, value2 }) => {
           <option value="showAll" className={s.option}>
             Show all
           </option>
-          <option value="height" className={s.option}>
-            Height
+          <option value="high" className={s.option}>
+            High
           </option>
           <option value="medium" className={s.option}>
             Medium

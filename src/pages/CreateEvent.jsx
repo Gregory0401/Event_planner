@@ -1,5 +1,6 @@
-import React from "react";
-import s from "./CreateEvent.module.css";
+import React from 'react';
+import s from './CreateEvent.module.css';
+import { NavLink } from 'react-router-dom';
 
 function CreateEvent({
   handleSubmit,
@@ -14,6 +15,9 @@ function CreateEvent({
 }) {
   return (
     <div className={s.container}>
+      <NavLink to="/" className={s.link}>
+        <button type="button"> back</button>
+      </NavLink>
       <form onSubmit={handleSubmit} className={s.form}>
         <ul className={s.input_container}>
           <li onClick={handleChangeCategory}>
@@ -23,43 +27,43 @@ function CreateEvent({
                 className={s.inputCategory}
                 type="radio"
                 name="category"
-                value="work"
+                value="art"
               />
-              Work
+              Art
             </label>
             <label className={s.label}>
               <input
                 className={s.inputCategory}
                 type="radio"
                 name="category"
-                value="purchases"
+                value="music"
               />
-              Purchases
+              Music
             </label>
             <label className={s.label}>
               <input
                 className={s.inputCategory}
                 type="radio"
                 name="category"
-                value="home"
+                value="business"
               />
-              Home
+              Busines
             </label>
             <label className={s.label}>
               <input
                 className={s.inputCategory}
                 type="radio"
                 name="category"
-                value="other"
+                value="party"
               />
-              Other
+              Party
             </label>
           </li>
           <li onClick={handleChangePriority}>
             <p className={s.label}>Choose a priority event:</p>
             <label className={s.label}>
-              <input type="radio" name="priority" value="height" />
-              Height
+              <input type="radio" name="priority" value="high" />
+              High
             </label>
             <label className={s.label}>
               <input type="radio" name="priority" value="medium" />
