@@ -13,13 +13,43 @@ function CreateEvent({
   handleChangePriority,
   handleChangeCategory,
 }) {
+  // const location = useLocation();
   return (
     <div className={s.container}>
       <NavLink to="/" className={s.link}>
-        <button type="button"> back</button>
+        <div className={s.arrow}></div>
+        <div className={s.back}>Back</div>
       </NavLink>
+      <div className={s.container_h2}>
+        <h2 className={s.h2}>Create new element</h2>
+      </div>
       <form onSubmit={handleSubmit} className={s.form}>
         <ul className={s.input_container}>
+          <li className={s.item}>
+            <p className={s.labelEvent}>Title</p>
+            <input
+              type="text"
+              id="new-todo-input"
+              className={s.input}
+              name="text"
+              autoComplete="off"
+              value={name}
+              onChange={handleChange}
+              placeholder="write a task name"
+            />
+          </li>
+          {/* <li className={s.item}>
+            <label className={s.labelEvent}>Location</label>
+            <input
+              type="text"
+              className={s.input}
+              name="location"
+              autoComplete="off"
+              // value={location}
+              onChange={handleChange}
+              placeholder="write a location"
+            />
+          </li> */}
           <li onClick={handleChangeCategory}>
             <p className={s.label}>Choose a category:</p>
             <label className={s.label}>
@@ -47,7 +77,7 @@ function CreateEvent({
                 name="category"
                 value="business"
               />
-              Busines
+              Business
             </label>
             <label className={s.label}>
               <input
@@ -74,24 +104,11 @@ function CreateEvent({
               Low
             </label>
           </li>
+
           <li className={s.item}>
-            <label className={s.labelEvent}>Name event</label>
+            <p className={s.labelEvent}>Date event</p>
             <input
               type="text"
-              id="new-todo-input"
-              className={s.input}
-              name="text"
-              autoComplete="off"
-              value={name}
-              onChange={handleChange}
-              placeholder="write a task name"
-            />
-          </li>
-          <li className={s.item}>
-            <label className={s.labelEvent}>Date event</label>
-            <input
-              type="text"
-              id="new-todo-input2"
               className={s.input}
               name="date"
               autoComplete="off"
@@ -101,14 +118,14 @@ function CreateEvent({
             />
           </li>
           <li className={s.item}>
-            <label className={s.labelEvent}>Comment</label>
+            <p className={s.labelEvent}>Description</p>
             <textarea
               className={s.textarea}
               name="description"
               id="description"
+              cols="30"
+              rows="8"
               placeholder="write a description event"
-              // cols="30"
-              // rows="8"
               autoComplete="off"
               value={description}
               onChange={handleChangeDescription}
