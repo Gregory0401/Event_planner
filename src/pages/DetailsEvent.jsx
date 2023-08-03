@@ -4,8 +4,6 @@ import EventCardDetails from '../components/EventCardDetails';
 import { NavLink } from 'react-router-dom';
 
 function DetailsEvent({ tasks, deleteTask, card }) {
-  console.log(1);
-
   return (
     <div className={s.containerM}>
       <NavLink to="/" className={s.link}>

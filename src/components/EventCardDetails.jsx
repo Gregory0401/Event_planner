@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import React from 'react';
 
 function EventCardDetails({ task, deleteTask, card }) {
-  console.log(card);
   return (
     <ul className={s.card} key={task.id}>
       <div className={s.image}>

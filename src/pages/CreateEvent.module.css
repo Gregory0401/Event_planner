@@ -40,12 +40,13 @@
 }
 .input_container {
   list-style: none;
+  padding: 0;
 }
 @media Screen and (min-width: 320px) {
   .form {
     box-sizing: border-box;
     width: 272px;
-    padding: 40px 16px 40px 16px;
+    padding: 30px 16px 40px 16px;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 2px 4px 9px 0px rgba(166, 141, 174, 0.28);
@@ -57,6 +58,63 @@
   }
   .item {
     display: block;
+  }
+  .text {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.4000000059604645px;
+    text-align: left;
+    color: rgba(123, 97, 255, 1);
+  }
+  .input {
+    width: 235px;
+    height: 56px;
+    border: 1px solid rgba(172, 167, 195, 1);
+    border-radius: 8px;
+  }
+  .inputText {
+    color: rgba(123, 97, 255, 1);
+  }
+  .input_c {
+    display: none;
+  }
+  .label_container {
+    box-sizing: border-box;
+    width: 235px;
+    height: 56px;
+    padding: 20px 5px 20px 5px;
+    border: 1px solid rgba(172, 167, 195, 1);
+    border-radius: 8px;
+    margin-bottom: 5px;
+    color: rgba(172, 167, 195, 1);
+    text-align: center;
+  }
+  .start {
+    box-sizing: border-box;
+    width: 235px;
+    height: 56px;
+    padding: 20px 5px 20px 5px;
+    border: 1px solid rgba(172, 167, 195, 1);
+    border-radius: 8px;
+    margin-bottom: 5px;
+    color: rgba(172, 167, 195, 1);
+    text-align: center;
+  }
+  .start::after {
+    display: block;
+    content: '';
+    width: 10px;
+    height: 6px;
+    background-image: url(../../image/shape2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 200px;
+  }
+  .label_container:hover {
+    background-color: rgba(172, 167, 195, 1);
+    color: rgba(255, 255, 255, 1);
   }
 }
 @media Screen and (min-width: 768px) {
