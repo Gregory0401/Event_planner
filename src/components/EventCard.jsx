@@ -2,30 +2,6 @@ import s from '../pages/DetailsEvent.module.css';
 import { NavLink } from 'react-router-dom';
 
 function EventCard({ task, detailsEvent }) {
-  // const levelHard = task => {
-  //   if (task.priority === 'height') {
-  //     return <li className={s.p_height}>High</li>;
-  //   }
-  //   if (task.priority === 'medium') {
-  //     return <li className={s.p_medium}>Medium</li>;
-  //   }
-  //   if (task.priority === 'low') {
-  //     return <li className={s.p_low}>Low</li>;
-  //   }
-  //   return console.log(1);
-  // };
-  // function detailsEvent(id) {
-  // const detailsTasks = task.filter(task => id === task.id);
-  // console.log(detailsTasks);
-  // console.log(id);
-  // }
-  /* {levelHard.filter(
-        value =>
-          (value = task.priority === 'height') ||
-          (value = task.priority === 'medium') ||
-          (value = task.priority === 'low')
-      )} */
-
   return (
     <ul className={s.card}>
       <div className={s.image}>
