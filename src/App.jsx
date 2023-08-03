@@ -6,7 +6,6 @@ import CreateEvent from './pages/CreateEvent';
 import DetailsEvent from './pages/DetailsEvent';
 import AppBar from './components/AppBar';
 import { nanoid } from 'nanoid';
-// import Footer from './components/Footer';
 
 function App() {
   const [name, setName] = useState('');
@@ -56,8 +55,6 @@ function App() {
   function deleteTask(id) {
     const remainingTasks = tasks.filter(task => id !== task.id);
     setTasks(remainingTasks);
-    // console.log(remainingTasks);
-    // console.log(id);
   }
 
   const detailsEvent = id => {
@@ -77,30 +74,6 @@ function App() {
     localStorage.setItem('card', JSON.stringify(tasks));
   }, [tasks]);
 
-  // const handleChangeDescriptionEdit = e => {
-  //   setDescription(e.target.value);
-  //   // console.log(e.target.value);
-  // };
-  // const handleChangeDateEdit = e => {
-  //   setDate(e.target.value);
-  //   editTask(date);
-  // };
-  // const handleChangeEdit = e => {
-  //   setName(e.target.value);
-  // };
-
-  // function handleSubmit2(e) {
-  //   e.preventDefault();
-  //   // console.log(name, date, description);
-  //   editTask(name, date, description);
-  // }
-
-  // function editTask2(id) {
-  //   editTask(id);
-  // }
-  // function editTask(id, name, date, description) {
-  //   console.log(id, name, date, description);
-  // }
   return (
     <>
       <AppBar />
@@ -139,21 +112,11 @@ function App() {
               deleteTask={deleteTask}
               id={tasks.id}
               card={card}
-              // name={name}
-              // date={date}
-              // description={description}
-              // key={tasks.id}
-              // handleChangeDescriptionEdit={handleChangeDescriptionEdit}
-              // handleChangeDateEdit={handleChangeDateEdit}
-              // handleChangeEdit={handleChangeEdit}
-              // handleSubmit2={handleSubmit2}
-              // editTask2={editTask2}
             />
           }
         />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-      {/* <Footer /> */}
     </>
   );
 }

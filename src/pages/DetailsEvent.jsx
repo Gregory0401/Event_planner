@@ -12,7 +12,9 @@ function DetailsEvent({ tasks, deleteTask, card }) {
         <div className={s.arrow}></div>
         <div className={s.back}>Back</div>
       </NavLink>
-      <h2 clasName={s.h2}>Galery opening</h2>
+      <div className={s.container_h2}>
+        <h2 clasName={s.h2}>Galery opening</h2>
+      </div>
       {card.map(task => {
         return (
           <EventCardDetails task={task} deleteTask={deleteTask} card={card} />
