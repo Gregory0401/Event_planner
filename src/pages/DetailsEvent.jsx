@@ -13,14 +13,7 @@ function DetailsEvent({ tasks, deleteTask, card }) {
       </NavLink>
       {card.map(task => {
         return (
-          <EventCardDetails
-            task={task}
-            deleteTask={deleteTask}
-            // handleChangeDescriptionEdit={handleChangeDescriptionEdit}
-            // handleChangeDateEdit={handleChangeDateEdit}
-            // handleChangeEdit={handleChangeEdit}
-            card={card}
-          />
+          <EventCardDetails task={task} deleteTask={deleteTask} card={card} />
         );
       })}
     </div>

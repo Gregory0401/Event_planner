@@ -80,24 +80,27 @@ function HomeView({ tasks, detailsEvent }) {
     }
     return console.log(1);
   });
+  // const screenWidth = window.innerWidth;
+
   return (
     <>
       <div className={s.containerM}>
         <div className={s.container_nav}>
           <div className={s.h2}>My events</div>
-          {/* <div>{detailsEvent}</div> */}
           <div className={s.nav}>
             <Dropdown handleSelected={handleSelected} value={value} />
             <DropdownPriority
               handleSelectedPriority={handleSelectedPriority}
               value2={value2}
             />
+
             <div>
-              <button className={s.buttonAdd}>
-                <NavLink to="/create" className={s.link_button}>
-                  + Add new event
-                </NavLink>
-              </button>
+              <NavLink to="/create" className={s.link_button}>
+                <button className={s.buttonAdd}>
+                  <div className={s.plus}></div>
+                  <div className={s.buttonText}>Add new event</div>
+                </button>
+              </NavLink>
             </div>
           </div>
         </div>
