@@ -68,6 +68,30 @@ function CreateEvent({
               onChange={handleChangeDescription}
             ></textarea>
           </li>
+          <li className={s.item}>
+            <p className={s.text}>Select date</p>
+            <input
+              type="text"
+              className={s.input}
+              name="date"
+              autoComplete="off"
+              value={date}
+              onChange={handleChangeDate}
+              placeholder="write a date "
+            />
+          </li>
+          <li className={s.item}>
+            <p className={s.text}>Select time</p>
+            <input
+              type="text"
+              className={s.input}
+              name="time"
+              autoComplete="off"
+              // value={time}
+              onChange={handleChangeDate}
+              placeholder="write a time"
+            />
+          </li>
           {/* <li className={s.item}>
             <label className={s.labelEvent}>Location</label>
             <input
@@ -185,18 +209,6 @@ function CreateEvent({
                 </div>
               </div>
             )}
-          </li>
-          <li className={s.item}>
-            <p className={s.text}>Select date</p>
-            <input
-              type="text"
-              className={s.input}
-              name="date"
-              autoComplete="off"
-              value={date}
-              onChange={handleChangeDate}
-              placeholder="write a date and time"
-            />
           </li>
         </ul>
 
