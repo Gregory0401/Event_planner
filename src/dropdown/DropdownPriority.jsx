@@ -2,35 +2,76 @@ import React, { useState } from 'react';
 import s from './Dropdown.module.css';
 
 export const DropdownPriority = ({ handleSelectedPriority, value2 }) => {
-  const [selectedValue, setSelectedValue] = useState('showAll');
+  const [selectedValue, setSelectedValue] = useState('Priority');
+  const [isVisible, setIsVisible] = useState(false);
 
-  const handleChange = event => {
+  const val = event => {
     setSelectedValue(event.target.value);
     handleSelectedPriority(event.target.value);
+  };
+  const open = () => {
+    setIsVisible(prevState => !prevState);
   };
 
   return (
     <>
-      <div className={s.container}>
-        <label className={s.label}></label>
-        <select
-          onChange={handleChange}
-          value={selectedValue}
-          className={s.select}
-        >
-          <option value="showAll" className={s.option}>
-            Show all
-          </option>
-          <option value="high" className={s.option}>
-            High
-          </option>
-          <option value="medium" className={s.option}>
-            Medium
-          </option>
-          <option value="low" className={s.option}>
-            Low
-          </option>
-        </select>
+      <div className={s.main_container}>
+        <div className={s.start} onClick={open}>
+          {selectedValue}
+        </div>
+
+        {isVisible && (
+          <div className={s.second_container}>
+            <div className={s.label_container} onChange={val}>
+              <label className={s.label}>
+                <input
+                  type="radio"
+                  name="priority"
+                  value="showAll"
+                  className={s.input_c}
+                  onChange={open}
+                />
+                Show all
+              </label>
+            </div>
+            <div className={s.label_container} onChange={val}>
+              <label className={s.label}>
+                <input
+                  type="radio"
+                  name="priority"
+                  value="high"
+                  className={s.input_c}
+                  onChange={open}
+                />
+                High
+              </label>
+            </div>
+            <div className={s.label_container} onChange={val}>
+              <label className={s.label}>
+                <input
+                  type="radio"
+                  name="priority"
+                  value="medium"
+                  className={s.input_c}
+                  onChange={open}
+                />
+                Medium
+              </label>
+            </div>
+            <div className={s.label_container} onChange={val}>
+              <label className={s.label}>
+                <input
+                  type="radio"
+                  name="priority"
+                  value="low"
+                  className={s.input_c}
+                  onChange={open}
+                />
+                Low
+              </label>
+            </div>
+          </div>
+        )}
       </div>
     </>
   );

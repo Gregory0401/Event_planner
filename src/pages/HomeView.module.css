@@ -12,6 +12,12 @@
     /* display: grid;
     grid-template-rows: 30px 30px; */
   }
+  .nav_button {
+    margin-left: 16px;
+  }
+  .nav {
+    display: flex;
+  }
   .text {
     text-align: center;
     font-size: 36px;

@@ -88,13 +88,16 @@ function HomeView({ tasks, detailsEvent }) {
         <div className={s.container_nav}>
           <div className={s.h2}>My events</div>
           <div className={s.nav}>
-            <Dropdown handleSelected={handleSelected} value={value} />
-            <DropdownPriority
-              handleSelectedPriority={handleSelectedPriority}
-              value2={value2}
-            />
-
-            <div>
+            <div className={s.nav_button}>
+              <Dropdown handleSelected={handleSelected} value={value} />
+            </div>
+            <div className={s.nav_button}>
+              <DropdownPriority
+                handleSelectedPriority={handleSelectedPriority}
+                value2={value2}
+              />
+            </div>
+            <div className={s.nav_button}>
               <NavLink to="/create" className={s.link_button}>
                 <button className={s.buttonAdd}>
                   <div className={s.plus}></div>
