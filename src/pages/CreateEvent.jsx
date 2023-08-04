@@ -54,6 +54,20 @@ function CreateEvent({
               placeholder="write a task name"
             />
           </li>
+          <li className={s.item}>
+            <p className={s.text}>Description</p>
+            <textarea
+              className={s.textarea}
+              name="description"
+              id="description"
+              cols="20"
+              rows="8"
+              placeholder="write a description event"
+              autoComplete="off"
+              value={description}
+              onChange={handleChangeDescription}
+            ></textarea>
+          </li>
           {/* <li className={s.item}>
             <label className={s.labelEvent}>Location</label>
             <input
@@ -66,6 +80,53 @@ function CreateEvent({
               placeholder="write a location"
             />
           </li> */}
+          <li onClick={handleChangePriority} className={s.priority_button}>
+            <p className={s.text}>Priority:</p>
+            <div className={s.start} onClick={open_priority}>
+              {selectedValue}
+            </div>
+
+            {isVisiblePriority && (
+              <div>
+                <div className={s.label_container} onChange={val}>
+                  <label className={s.label}>
+                    <input
+                      type="radio"
+                      name="priority"
+                      value="high"
+                      className={s.input_c}
+                      onChange={open_priority}
+                    />
+                    High
+                  </label>
+                </div>
+                <div className={s.label_container} onChange={val}>
+                  <label className={s.label}>
+                    <input
+                      type="radio"
+                      name="priority"
+                      value="medium"
+                      className={s.input_c}
+                      onChange={open_priority}
+                    />
+                    Medium
+                  </label>
+                </div>
+                <div className={s.label_container} onChange={val}>
+                  <label className={s.label}>
+                    <input
+                      type="radio"
+                      name="priority"
+                      value="low"
+                      className={s.input_c}
+                      onChange={open_priority}
+                    />
+                    Low
+                  </label>
+                </div>
+              </div>
+            )}
+          </li>
           <li onClick={handleChangeCategory}>
             <p className={s.text}>Category:</p>
             <div className={s.start} onClick={open}>
@@ -136,68 +197,6 @@ function CreateEvent({
               onChange={handleChangeDate}
               placeholder="write a date and time"
             />
-          </li>
-          <li onClick={handleChangePriority} className={s.priority_button}>
-            <p className={s.text}>Priority:</p>
-            <div className={s.start} onClick={open}>
-              {selectedValue}
-            </div>
-
-            {isVisiblePriority && (
-              <div>
-                <div className={s.label_container} onChange={val}>
-                  <label className={s.label}>
-                    <input
-                      type="radio"
-                      name="priority"
-                      value="high"
-                      className={s.input_c}
-                      onChange={open_priority}
-                    />
-                    High
-                  </label>
-                </div>
-                <div className={s.label_container} onChange={val}>
-                  <label className={s.label}>
-                    <input
-                      type="radio"
-                      name="priority"
-                      value="medium"
-                      className={s.input_c}
-                      onChange={open_priority}
-                    />
-                    Medium
-                  </label>
-                </div>
-                <div className={s.label_container} onChange={val}>
-                  <label className={s.label}>
-                    <input
-                      type="radio"
-                      name="priority"
-                      value="low"
-                      className={s.input_c}
-                      onChange={open_priority}
-                    />
-                    Low
-                  </label>
-                </div>
-              </div>
-            )}
-          </li>
-
-          <li className={s.item}>
-            <p className={s.text}>Description</p>
-            <textarea
-              className={s.textarea}
-              name="description"
-              id="description"
-              cols="20"
-              rows="8"
-              placeholder="write a description event"
-              autoComplete="off"
-              value={description}
-              onChange={handleChangeDescription}
-            ></textarea>
           </li>
         </ul>
 
