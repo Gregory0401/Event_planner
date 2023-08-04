@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Event_planner/static/css/main.af1f7a8c.css",
-    "main.js": "/Event_planner/static/js/main.334efdb2.js",
+    "main.css": "/Event_planner/static/css/main.beec0ee3.css",
+    "main.js": "/Event_planner/static/js/main.2833a718.js",
     "static/media/Geo Wave 22.png": "/Event_planner/static/media/Geo Wave 22.2d87802889d8ca9566dc.png",
     "static/media/Rectangle 344.png": "/Event_planner/static/media/Rectangle 344.e182941aee82afc24bc0.png",
     "static/media/Rectangle 347.png": "/Event_planner/static/media/Rectangle 347.c562ee0abf166f7ce72c.png",
     "static/media/Rectangle 330.png": "/Event_planner/static/media/Rectangle 330.1c87b6c3ade428371ced.png",
     "static/media/Rectangle 345.png": "/Event_planner/static/media/Rectangle 345.05d70f7ce1374aaf254b.png",
     "index.html": "/Event_planner/index.html",
-    "main.af1f7a8c.css.map": "/Event_planner/static/css/main.af1f7a8c.css.map",
-    "main.334efdb2.js.map": "/Event_planner/static/js/main.334efdb2.js.map"
+    "main.beec0ee3.css.map": "/Event_planner/static/css/main.beec0ee3.css.map",
+    "main.2833a718.js.map": "/Event_planner/static/js/main.2833a718.js.map"
   },
   "entrypoints": [
-    "static/css/main.af1f7a8c.css",
-    "static/js/main.334efdb2.js"
+    "static/css/main.beec0ee3.css",
+    "static/js/main.2833a718.js"
   ]
 }
