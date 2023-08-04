@@ -25,12 +25,7 @@
     margin-top: 50px;
   }
   .h2 {
-    font-family: Poppins;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 48px;
-    letter-spacing: 0em;
-    text-align: left;
+    display: none;
   }
   .buttonAdd {
     display: flex;
@@ -81,9 +76,6 @@
     display: flex;
     margin-right: 0;
     margin-left: auto;
-    /* display: grid;
-    grid-template-rows: 30px 30px 30px;
-    grid-template-columns: 150px 150px 150px; */
   }
 
   .containerCards {
@@ -115,6 +107,15 @@
   .button_container {
     display: flex;
     list-style: none;
+  }
+  .h2 {
+    display: inline;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
   }
 }
 @media Screen and (min-width: 1280px) {

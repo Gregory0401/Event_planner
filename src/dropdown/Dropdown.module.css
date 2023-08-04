@@ -3,19 +3,9 @@
 }
 .second_container {
   position: absolute;
-  top: 56px;
+  top: 48px;
   left: 0;
   z-index: 100;
-}
-.start:after {
-  display: block;
-  content: '';
-  width: 16px;
-  height: 18px;
-  margin-left: 25px;
-  background-image: url(../../image/shape3.png);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .select {
   width: 129px;
@@ -89,7 +79,7 @@
   .start {
     display: flex;
     box-sizing: border-box;
-    width: 129px;
+    width: 56px;
     height: 56px;
     padding: 16px;
     border-radius: 8px;
@@ -100,11 +90,48 @@
     text-align: center;
     cursor: pointer;
   }
+  .start_category:after {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 18px;
+    margin-left: 3px;
+    background-image: url(../../image/shape4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .start_category {
+    display: flex;
+    box-sizing: border-box;
+    width: 56px;
+    height: 56px;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: -8px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 2px 4px 9px 0px rgba(166, 141, 174, 0.28);
+    color: rgba(63, 63, 63, 1);
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .start_category {
+  }
   .label {
     cursor: pointer;
   }
   .label:hover {
     color: rgba(123, 97, 255, 1);
+  }
+  .start:after {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 18px;
+    margin-left: 5px;
+    background-image: url(../../image/shape3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 @media Screen and (min-width: 768px) {
@@ -112,5 +139,22 @@
     width: 129px;
     height: 56px;
     margin: 0;
+  }
+  .start_category {
+    display: flex;
+    box-sizing: border-box;
+    width: 129px;
+    height: 56px;
+    padding: 16px;
+  }
+  .start_category:after {
+    margin-left: 22px;
+  }
+  .start {
+    width: 129px;
+    height: 56px;
+  }
+  .start:after {
+    margin-left: 25px;
   }
 }

@@ -14,13 +14,21 @@ function CreateEvent({
   handleChangeCategory,
 }) {
   const [isVisible, setIsVisible] = useState(false);
+  const [isVisiblePriority, setIsVisiblePriority] = useState(false);
   const [selectedValue, setSelectedValue] = useState('');
+  const [selectedValueCategory, setSelectedValueCategory] = useState('');
 
+  const open_priority = () => {
+    setIsVisiblePriority(prevState => !prevState);
+  };
   const open = () => {
     setIsVisible(prevState => !prevState);
   };
   const val = event => {
     setSelectedValue(event.target.value);
+  };
+  const val2 = event => {
+    setSelectedValueCategory(event.target.value);
   };
   return (
     <div className={s.container}>
@@ -60,92 +68,63 @@ function CreateEvent({
           </li> */}
           <li onClick={handleChangeCategory}>
             <p className={s.text}>Category:</p>
-            <label>
-              <input
-                className={s.inputCategory}
-                type="radio"
-                name="category"
-                value="art"
-              />
-              Art
-            </label>
-            <label>
-              <input
-                className={s.inputCategory}
-                type="radio"
-                name="category"
-                value="music"
-              />
-              Music
-            </label>
-            <label>
-              <input
-                className={s.inputCategory}
-                type="radio"
-                name="category"
-                value="business"
-              />
-              Business
-            </label>
-            <label>
-              <input
-                className={s.inputCategory}
-                type="radio"
-                name="category"
-                value="party"
-              />
-              Party
-            </label>
-          </li>
-          <li onClick={handleChangePriority} className={s.priority_button}>
-            <p className={s.text}>Priority:</p>
             <div className={s.start} onClick={open}>
-              {selectedValue}
+              {selectedValueCategory}
             </div>
+
             {isVisible && (
               <div>
-                <div className={s.label_container} onChange={val}>
+                <div className={s.label_container} onChange={val2}>
                   <label className={s.label}>
                     <input
-                      type="radio"
-                      name="priority"
-                      value="high"
                       className={s.input_c}
+                      type="radio"
+                      name="category"
+                      value="art"
                       onChange={open}
                     />
-                    High
+                    Art
                   </label>
                 </div>
-                <div className={s.label_container} onChange={val}>
+                <div className={s.label_container} onChange={val2}>
                   <label className={s.label}>
                     <input
-                      type="radio"
-                      name="priority"
-                      value="medium"
                       className={s.input_c}
+                      type="radio"
+                      name="category"
+                      value="music"
                       onChange={open}
                     />
-                    Medium
+                    Music
                   </label>
                 </div>
-                <div className={s.label_container} onChange={val}>
+                <div className={s.label_container} onChange={val2}>
                   <label className={s.label}>
                     <input
-                      type="radio"
-                      name="priority"
-                      value="low"
                       className={s.input_c}
-                      onChange={() => {
-                        open();
-                      }}
+                      type="radio"
+                      name="category"
+                      value="business"
+                      onChange={open}
                     />
-                    Low
+                    Business
+                  </label>
+                </div>
+                <div className={s.label_container} onChange={val2}>
+                  <label className={s.label}>
+                    <input
+                      className={s.input_c}
+                      type="radio"
+                      name="category"
+                      value="party"
+                      onChange={open}
+                    />
+                    Party
                   </label>
                 </div>
               </div>
             )}
           </li>
-
           <li className={s.item}>
             <p className={s.text}>Select date</p>
             <input
@@ -158,6 +137,54 @@ function CreateEvent({
               placeholder="write a date and time"
             />
           </li>
+          <li onClick={handleChangePriority} className={s.priority_button}>
+            <p className={s.text}>Priority:</p>
+            <div className={s.start} onClick={open}>
+              {selectedValue}
+            </div>
+
+            {isVisiblePriority && (
+              <div>
+                <div className={s.label_container} onChange={val}>
+                  <label className={s.label}>
+                    <input
+                      type="radio"
+                      name="priority"
+                      value="high"
+                      className={s.input_c}
+                      onChange={open_priority}
+                    />
+                    High
+                  </label>
+                </div>
+                <div className={s.label_container} onChange={val}>
+                  <label className={s.label}>
+                    <input
+                      type="radio"
+                      name="priority"
+                      value="medium"
+                      className={s.input_c}
+                      onChange={open_priority}
+                    />
+                    Medium
+                  </label>
+                </div>
+                <div className={s.label_container} onChange={val}>
+                  <label className={s.label}>
+                    <input
+                      type="radio"
+                      name="priority"
+                      value="low"
+                      className={s.input_c}
+                      onChange={open_priority}
+                    />
+                    Low
+                  </label>
+                </div>
+              </div>
+            )}
+          </li>
+
           <li className={s.item}>
             <p className={s.text}>Description</p>
             <textarea
