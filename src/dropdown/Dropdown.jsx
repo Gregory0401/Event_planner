@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import s from './Dropdown.module.css';
+const screenWidth = window.innerWidth;
 
 export const Dropdown = ({ handleSelected, value }) => {
   const [selectedValue, setSelectedValue] = useState('Category');
   const [isVisible, setIsVisible] = useState(false);
-
   const val = event => {
     setSelectedValue(event.target.value);
     handleSelected(event.target.value);
@@ -19,6 +19,7 @@ export const Dropdown = ({ handleSelected, value }) => {
         <div className={s.start_category} onClick={open}>
           {selectedValue}
         </div>
+        <div className={s.start_category2} onClick={open}></div>
 
         {isVisible && (
           <div className={s.second_container}>

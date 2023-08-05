@@ -27,9 +27,11 @@ function App() {
   }
   function handleChangeCategory(e) {
     setCategory(e.target.value);
+    console.log(category);
   }
   function handleChangePriority(e) {
     setPriority(e.target.value);
+    console.log(priority);
   }
   function handleSubmit(e) {
     e.preventDefault();

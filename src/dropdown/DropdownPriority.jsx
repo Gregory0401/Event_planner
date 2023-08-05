@@ -19,6 +19,7 @@ export const DropdownPriority = ({ handleSelectedPriority, value2 }) => {
         <div className={s.start} onClick={open}>
           {selectedValue}
         </div>
+        <div className={s.start2} onClick={open}></div>
 
         {isVisible && (
           <div className={s.second_container}>
