@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import s from './Dropdown.module.css';
-const screenWidth = window.innerWidth;
+// const screenWidth = window.innerWidth;
 
 export const Dropdown = ({ handleSelected, value }) => {
   const [selectedValue, setSelectedValue] = useState('Category');
