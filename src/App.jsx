@@ -16,9 +16,13 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const [card, setCard] = useState([]);
   const [time, setTime] = useState('');
+  const [location, setLocation] = useState('');
 
   function handleChangeTime(e) {
     setTime(e.target.value);
+  }
+  function handleChangeLocation(e) {
+    setLocation(e.target.value);
   }
   function handleChange(e) {
     setName(e.target.value);
@@ -39,19 +43,29 @@ function App() {
   }
   function handleSubmit(e) {
     e.preventDefault();
-    addTask(name, date, time, description, category, priority);
+    addTask(name, date, time, location, description, category, priority);
     setName('');
     setDescription('');
     setDate('');
     setTime('');
+    setLocation('');
   }
 
-  function addTask(name, date, time, description, category, priority) {
+  function addTask(
+    name,
+    date,
+    time,
+    location,
+    description,
+    category,
+    priority
+  ) {
     const newTask = {
       id: 'todo-' + nanoid(),
       name: name,
       date: date,
       time: time,
+      location: location,
       description: description,
       category: category,
       priority: priority,
@@ -110,6 +124,8 @@ function App() {
               handleChangePriority={handleChangePriority}
               handleChangeTime={handleChangeTime}
               time={time}
+              handleChangeLocation={handleChangeLocation}
+              location={location}
             />
           }
         />

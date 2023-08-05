@@ -11,10 +11,12 @@ function CreateEvent({
   name,
   date,
   time,
+  location,
   handleChangeTime,
   description,
   handleChangePriority,
   handleChangeCategory,
+  handleChangeLocation,
 }) {
   const [isVisible, setIsVisible] = useState(false);
   const [isVisiblePriority, setIsVisiblePriority] = useState(false);
@@ -114,8 +116,8 @@ function CreateEvent({
               className={s.input}
               name="location"
               autoComplete="off"
-              // value={location}
-              // onChange={handleChange}
+              value={location}
+              onChange={handleChangeLocation}
               placeholder="write a location"
             />
           </li>

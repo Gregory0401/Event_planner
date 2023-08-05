@@ -22,9 +22,8 @@ function EventCard({ task, detailsEvent }) {
       <li className={s.item}>
         {task.date}
         <span className={s.span}>at</span>
-
-        {''}
         {task.time}
+        <span className={s.spanLocation}>{task.location}</span>
       </li>
       <li className={s.title}>{task.name}</li>
       <li className={s.description}>{task.description}</li>
