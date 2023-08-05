@@ -12,13 +12,20 @@ function EventCard({ task, detailsEvent }) {
       </div>
       <div className={s.info}>
         <li className={s.category}>{task.category}</li>
+
         <li className={s.priority}>
           {task.priority === 'high' && <li className={s.high}>high</li>}
           {task.priority === 'medium' && <li className={s.medium}>medium</li>}
           {task.priority === 'low' && <li className={s.low}>low</li>}
         </li>
       </div>
-      <li className={s.item}>{task.date}</li>
+      <li className={s.item}>
+        {task.date}
+        <span className={s.span}>at</span>
+
+        {''}
+        {task.time}
+      </li>
       <li className={s.title}>{task.name}</li>
       <li className={s.description}>{task.description}</li>
       <NavLink to="/details" className={s.link}>

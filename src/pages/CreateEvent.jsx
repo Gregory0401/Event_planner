@@ -83,7 +83,7 @@ function CreateEvent({
             <p className={s.text}>Select date</p>
 
             {/* <Example value={date} /> */}
-            {/* <input
+            <input
               type="text"
               className={s.input}
               name="date"
@@ -91,18 +91,18 @@ function CreateEvent({
               value={date}
               onChange={handleChangeDate}
               placeholder="write a date "
-            /> */}
+            />
           </li>
           <li className={s.item}>
             <p className={s.text}>Select time</p>
             <div>
-              <label htmlFor="time">Select time</label>
               <input
                 type="time"
                 id="time"
                 name="time"
                 value={time}
                 onChange={handleChangeTime}
+                className={s.input}
               />
             </div>
           </li>
@@ -115,7 +115,7 @@ function CreateEvent({
               name="location"
               autoComplete="off"
               // value={location}
-              onChange={handleChange}
+              // onChange={handleChange}
               placeholder="write a location"
             />
           </li>

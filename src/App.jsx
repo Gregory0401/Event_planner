@@ -15,7 +15,11 @@ function App() {
   const [priority, setPriority] = useState('');
   const [tasks, setTasks] = useState([]);
   const [card, setCard] = useState([]);
+  const [time, setTime] = useState('');
 
+  function handleChangeTime(e) {
+    setTime(e.target.value);
+  }
   function handleChange(e) {
     setName(e.target.value);
   }
@@ -35,17 +39,19 @@ function App() {
   }
   function handleSubmit(e) {
     e.preventDefault();
-    addTask(name, date, description, category, priority);
+    addTask(name, date, time, description, category, priority);
     setName('');
     setDescription('');
     setDate('');
+    setTime('');
   }
 
-  function addTask(name, date, description, category, priority) {
+  function addTask(name, date, time, description, category, priority) {
     const newTask = {
       id: 'todo-' + nanoid(),
       name: name,
       date: date,
+      time: time,
       description: description,
       category: category,
       priority: priority,
@@ -102,6 +108,8 @@ function App() {
               description={description}
               category={category}
               handleChangePriority={handleChangePriority}
+              handleChangeTime={handleChangeTime}
+              time={time}
             />
           }
         />
