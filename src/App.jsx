@@ -43,7 +43,16 @@ function App() {
   }
   function handleSubmit(e) {
     e.preventDefault();
-    addTask(name, date, time, location, description, category, priority);
+    addTask(
+      name,
+      date,
+      time,
+
+      location,
+      description,
+      category,
+      priority
+    );
     setName('');
     setDescription('');
     setDate('');
@@ -58,7 +67,8 @@ function App() {
     location,
     description,
     category,
-    priority
+    priority,
+    formatMonthYear
   ) {
     const newTask = {
       id: 'todo-' + nanoid(),
@@ -70,6 +80,7 @@ function App() {
       category: category,
       priority: priority,
       completed: false,
+      formatMonthYear: formatMonthYear,
     };
     setTasks([...tasks, newTask]);
   }

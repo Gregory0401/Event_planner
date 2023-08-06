@@ -18,6 +18,8 @@ function CreateEvent({
   handleChangePriority,
   handleChangeCategory,
   handleChangeLocation,
+  formatMonthYear,
+  handleChangeData,
 }) {
   const [isVisible, setIsVisible] = useState(false);
   const [isVisiblePriority, setIsVisiblePriority] = useState(false);
@@ -38,36 +40,6 @@ function CreateEvent({
   const val2 = event => {
     setSelectedValueCategory(event.target.value);
   };
-  // function handleDateChange(e) {
-  //   console.log(e.target.value);
-  // }
-  // const handleChangeTime = e => {
-  //   setTime(e.target.value);
-  // };
-  // const toggleDataPicker = () => {
-  //   const form = document.getElementById('form');
-  //   const dateInput = form.querySelector('#date');
-
-  //   if (showDatePicker) {
-  //     dateInput.blur();
-  //   } else {
-  //     dateInput.focus();
-  //   }
-
-  //   setShowDatePicker(prevState => !prevState);
-  // };
-  // const handleDateChange = date => {
-  //   setStartDate(date);
-  // };
-  // const handleSaveDate = () => {
-  //   const selectedDate = convertDateFormat(startDate);
-  //   setDate(selectedDate);
-  //   setShowDatePicker(false);
-  // };
-
-  // const handleCloseCalendar = () => {
-  //   setShowDatePicker(false);
-  // };
 
   return (
     <div className={s.container}>
@@ -111,8 +83,9 @@ function CreateEvent({
             <p className={s.text}>Select date</p>
 
             {/* <Example value={date} /> */}
+
             <input
-              type="text"
+              type="date"
               className={s.input}
               name="date"
               autoComplete="off"

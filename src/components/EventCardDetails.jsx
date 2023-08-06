@@ -20,7 +20,8 @@ function EventCardDetails({ task, deleteTask, card }) {
         <li className={s.location}>{task.location}</li>
         <li className={s.location}>
           {task.date}
-          {''}at{''}
+          <span className={s.span_left}></span>at
+          <span className={s.span_right}></span>
           {task.time}
         </li>
       </div>
