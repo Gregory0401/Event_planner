@@ -78,6 +78,34 @@ function HomeView({ tasks, detailsEvent }) {
         )
       );
     }
+    if (value === 'conference') {
+      return (
+        value === task.category && (
+          <EventCard task={task} detailsEvent={detailsEvent} />
+        )
+      );
+    }
+    if (value === 'workshop') {
+      return (
+        value === task.category && (
+          <EventCard task={task} detailsEvent={detailsEvent} />
+        )
+      );
+    }
+    if (value === 'sport') {
+      return (
+        value === task.category && (
+          <EventCard task={task} detailsEvent={detailsEvent} />
+        )
+      );
+    }
+    if (value === 'party') {
+      return (
+        value === task.category && (
+          <EventCard task={task} detailsEvent={detailsEvent} />
+        )
+      );
+    }
     return console.log(1);
   });
   // const screenWidth = window.innerWidth;

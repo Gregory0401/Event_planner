@@ -3,7 +3,7 @@ import s from '../components/EventCardDetails.module.css';
 import EventCardDetails from '../components/EventCardDetails';
 import { NavLink } from 'react-router-dom';
 
-function DetailsEvent({ tasks, deleteTask, card }) {
+function DetailsEvent({ editTask, deleteTask, card, detailsEvent }) {
   return (
     <div className={s.containerM}>
       <NavLink to="/" className={s.link}>
@@ -15,7 +15,12 @@ function DetailsEvent({ tasks, deleteTask, card }) {
       </div>
       {card.map(task => {
         return (
-          <EventCardDetails task={task} deleteTask={deleteTask} card={card} />
+          <EventCardDetails
+            task={task}
+            deleteTask={deleteTask}
+            editTask={editTask}
+            detailsEvent={detailsEvent}
+          />
         );
       })}
     </div>

@@ -83,6 +83,42 @@ export const Dropdown = ({ handleSelected, value }) => {
                 Party
               </label>
             </div>
+            <div className={s.label_container} onChange={val}>
+              <label className={s.label}>
+                <input
+                  type="radio"
+                  name="category"
+                  value="sport"
+                  className={s.input_c}
+                  onChange={open}
+                />
+                Sport
+              </label>
+            </div>
+            <div className={s.label_container} onChange={val}>
+              <label className={s.label}>
+                <input
+                  type="radio"
+                  name="category"
+                  value="workshop"
+                  className={s.input_c}
+                  onChange={open}
+                />
+                Workshop
+              </label>
+            </div>
+            <div className={s.label_container} onChange={val}>
+              <label className={s.label}>
+                <input
+                  type="radio"
+                  name="category"
+                  value="conference"
+                  className={s.input_c}
+                  onChange={open}
+                />
+                Conference
+              </label>
+            </div>
           </div>
         )}
       </div>

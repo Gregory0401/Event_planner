@@ -2,7 +2,7 @@ import s from './EventCardDetails.module.css';
 import { NavLink } from 'react-router-dom';
 import React from 'react';
 
-function EventCardDetails({ task, deleteTask, card }) {
+function EventCardDetails({ task, deleteTask, editTask }) {
   return (
     <ul className={s.card} key={task.id}>
       <div className={s.image}>
@@ -10,6 +10,9 @@ function EventCardDetails({ task, deleteTask, card }) {
         {task.category === 'business' && <li className={s.business}></li>}
         {task.category === 'party' && <li className={s.party}></li>}
         {task.category === 'music' && <li className={s.music}></li>}
+        {task.category === 'workshop' && <li className={s.workshop}></li>}
+        {task.category === 'conference' && <li className={s.conference}></li>}
+        {task.category === 'sport' && <li className={s.sport}></li>}
       </div>
       <li className={s.description}>{task.description}</li>
       <div className={s.date}>
@@ -27,7 +30,11 @@ function EventCardDetails({ task, deleteTask, card }) {
       </div>
 
       <div className={s.buttonContainer}>
-        <button className={s.buttonEdit}>Edit</button>
+        <NavLink to="/details/:edit" className={s.link_button}>
+          <button className={s.buttonEdit} onClick={editTask(task)}>
+            Edit
+          </button>
+        </NavLink>
         <button
           onClick={() => {
             deleteTask(task.id);

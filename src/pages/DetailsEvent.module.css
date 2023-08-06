@@ -51,6 +51,7 @@
 .spanLocation {
   margin-left: 80px;
 }
+
 @media Screen and (min-width: 320px) {
   .card {
     position: relative;
@@ -94,6 +95,27 @@
     width: 232px;
     height: 296px;
     background-image: url(../../image/Rectangle\ 347.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .workshop {
+    width: 232px;
+    height: 296px;
+    background-image: url(../../image/Rectangle\ 346.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .conference {
+    width: 232px;
+    height: 296px;
+    background-image: url(../../image/Rectangle\ 348.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .sport {
+    width: 232px;
+    height: 296px;
+    background-image: url(../../image/Rectangle\ 350.png);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -193,6 +215,18 @@
     width: 332px;
     height: 296px;
   }
+  .conference {
+    width: 332px;
+    height: 296px;
+  }
+  .workshop {
+    width: 332px;
+    height: 296px;
+  }
+  .sport {
+    width: 332px;
+    height: 296px;
+  }
   .business {
     width: 332px;
     height: 296px;
@@ -241,7 +275,20 @@
     width: 302px;
     height: 296px;
   }
+
   .item {
     width: 302px;
+  }
+  .conference {
+    width: 302px;
+    height: 296px;
+  }
+  .workshop {
+    width: 302px;
+    height: 296px;
+  }
+  .sport {
+    width: 302px;
+    height: 296px;
   }
 }

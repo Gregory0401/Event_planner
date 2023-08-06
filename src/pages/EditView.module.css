@@ -1,9 +1,35 @@
+.link {
+  width: 67px;
+  height: 24px;
+  display: flex;
+  text-decoration: none;
+  cursor: pointer;
+}
+.arrow {
+  width: 16px;
+  height: 12px;
+  margin-right: 8px;
+  margin-top: 3px;
+  background-image: url(../../image/shape.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.back {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(123, 97, 255, 1);
+}
 .container {
   padding: 12px;
   background-image: url(../../public/Geo\ Wave\ 22.png);
   background-size: cover;
   background-repeat: repeat;
 }
+
 .arrow {
   width: 16px;
   height: 12px;

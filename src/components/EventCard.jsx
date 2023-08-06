@@ -9,6 +9,9 @@ function EventCard({ task, detailsEvent }) {
         {task.category === 'business' && <li className={s.business}></li>}
         {task.category === 'party' && <li className={s.party}></li>}
         {task.category === 'music' && <li className={s.music}></li>}
+        {task.category === 'workshop' && <li className={s.workshop}></li>}
+        {task.category === 'conference' && <li className={s.conference}></li>}
+        {task.category === 'sport' && <li className={s.sport}></li>}
       </div>
       <div className={s.info}>
         <li className={s.category}>{task.category}</li>

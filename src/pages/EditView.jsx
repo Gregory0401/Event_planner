@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import s from './CreateEvent.module.css';
+import s from './EditView.module.css';
 import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
 
-function CreateEvent({
-  handleSubmit,
+function EditView({
+  editCard,
+  handleSubmitEdit,
   handleChange,
   handleChangeDate,
   handleChangeDescription,
@@ -21,6 +22,7 @@ function CreateEvent({
   const [isVisiblePriority, setIsVisiblePriority] = useState(false);
   const [selectedValue, setSelectedValue] = useState('');
   const [selectedValueCategory, setSelectedValueCategory] = useState('');
+  // const [name2, setName2] = useState(name);
 
   const open_priority = () => {
     setIsVisiblePriority(prevState => !prevState);
@@ -35,16 +37,35 @@ function CreateEvent({
     setSelectedValueCategory(event.target.value);
   };
 
+  // function handleChange(e) {
+  //   setName2(e.target.value);
+  //   console.log(name2);
+  // }
+
+  // function handleSubmitEdit(e) {
+  //   e.preventDefault();
+  //   addEditTask(name2, date, time, location, description, category, priority);
+  //   console.log(
+  //     name,
+  //     date,
+  //     time,
+  //     location,
+  //     description,
+  //     selectedValue,
+  //     selectedValueCategory
+  //   );
+  // }
+
   return (
     <div className={s.container}>
-      <NavLink to="/" className={s.link}>
+      <NavLink to="/details" className={s.link}>
         <div className={s.arrow}></div>
         <div className={s.back}>Back</div>
       </NavLink>
-      <div className={s.container_h2}>
-        <h2 className={s.h2}>Create new element</h2>
-      </div>
-      <form onSubmit={handleSubmit} className={s.form}>
+
+      <h2 className={s.h2}>Edit element</h2>
+
+      <form onSubmit={handleSubmitEdit} className={s.form}>
         <ul className={s.input_container}>
           <li className={s.item}>
             <p className={s.text}>Title</p>
@@ -54,6 +75,7 @@ function CreateEvent({
               className={s.input}
               name="text"
               autoComplete="off"
+              defaultValue={editCard.name}
               value={name}
               onChange={handleChange}
               placeholder="write a task name"
@@ -69,6 +91,7 @@ function CreateEvent({
               rows="8"
               placeholder="write a description event"
               autoComplete="off"
+              defaultValue={editCard.description}
               value={description}
               onChange={handleChangeDescription}
             ></textarea>
@@ -80,6 +103,7 @@ function CreateEvent({
               className={s.input}
               name="date"
               autoComplete="off"
+              defaultValue={editCard.date}
               value={date}
               onChange={handleChangeDate}
               placeholder="write a date "
@@ -92,6 +116,7 @@ function CreateEvent({
                 type="time"
                 id="time"
                 name="time"
+                defaultValue={editCard.time}
                 value={time}
                 onChange={handleChangeTime}
                 className={s.input}
@@ -106,6 +131,7 @@ function CreateEvent({
               className={s.input}
               name="location"
               autoComplete="off"
+              defaultValue={editCard.location}
               value={location}
               onChange={handleChangeLocation}
               placeholder="write a location"
@@ -114,7 +140,9 @@ function CreateEvent({
           <li onClick={handleChangeCategory} className={s.container_a}>
             <p className={s.text}>Category:</p>
             <div className={s.start} onClick={open}>
-              {selectedValueCategory}
+              {selectedValueCategory.length > 0
+                ? selectedValueCategory
+                : editCard.category}
             </div>
 
             {isVisible && (
@@ -167,54 +195,6 @@ function CreateEvent({
                     Party
                   </label>
                 </div>
-                <div className={s.label_container} onChange={val2}>
-                  <label className={s.label}>
-                    <input
-                      type="radio"
-                      name="category"
-                      value="sport"
-                      className={s.input_c}
-                      onChange={open}
-                    />
-                    Sport
-                  </label>
-                </div>
-                <div className={s.label_container} onChange={val2}>
-                  <label className={s.label}>
-                    <input
-                      type="radio"
-                      name="category"
-                      value="party"
-                      className={s.input_c}
-                      onChange={open}
-                    />
-                    Party
-                  </label>
-                </div>
-                <div className={s.label_container} onChange={val2}>
-                  <label className={s.label}>
-                    <input
-                      type="radio"
-                      name="category"
-                      value="workshop"
-                      className={s.input_c}
-                      onChange={open}
-                    />
-                    Workshop
-                  </label>
-                </div>
-                <div className={s.label_container} onChange={val2}>
-                  <label className={s.label}>
-                    <input
-                      type="radio"
-                      name="category"
-                      value="conference"
-                      className={s.input_c}
-                      onChange={open}
-                    />
-                    Conference
-                  </label>
-                </div>
               </div>
             )}
           </li>
@@ -231,7 +211,7 @@ function CreateEvent({
           <li onClick={handleChangePriority} className={s.container_a}>
             <p className={s.text}>Priority:</p>
             <div className={s.start} onClick={open_priority}>
-              {selectedValue}
+              {selectedValue.length > 0 ? selectedValue : editCard.priority}
             </div>
 
             {isVisiblePriority && (
@@ -278,11 +258,11 @@ function CreateEvent({
         </ul>
         <div className={s.button_container}>
           <button type="submit" className={s.button}>
-            Add event
+            Edit event
           </button>
         </div>
       </form>
     </div>
   );
 }
-export default CreateEvent;
+export default EditView;

@@ -244,6 +244,27 @@
     width: 272px;
     margin: 0 auto;
   }
+  .workshop {
+    width: 232px;
+    height: 296px;
+    background-image: url(../../image/Rectangle\ 346.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .conference {
+    width: 232px;
+    height: 296px;
+    background-image: url(../../image/Rectangle\ 348.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .sport {
+    width: 232px;
+    height: 296px;
+    background-image: url(../../image/Rectangle\ 350.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 @media Screen and (min-width: 768px) {
   .card {
@@ -262,6 +283,18 @@
     height: 272px;
   }
   .party {
+    width: 688px;
+    height: 272px;
+  }
+  .conference {
+    width: 688px;
+    height: 272px;
+  }
+  .workshop {
+    width: 688px;
+    height: 272px;
+  }
+  .sport {
     width: 688px;
     height: 272px;
   }
@@ -294,10 +327,11 @@
   .container_h2 {
     width: 688px;
   }
-}
-@media Screen and (min-width: 768px) {
   .buttonEdit {
     width: 55px;
     margin-left: 465px;
   }
+}
+
+@media Scree and (mon-width: 1280px) {
 }
