@@ -17,10 +17,14 @@ function EventCardDetails({ task, deleteTask, card }) {
         {task.priority === 'high' && <li className={s.high}>high</li>}
         {task.priority === 'medium' && <li className={s.medium}>medium</li>}
         {task.priority === 'low' && <li className={s.low}>low</li>}
-        <li className={s.location}>location</li>
-        <li className={s.time2}>{task.date}</li>
+        <li className={s.location}>{task.location}</li>
+        <li className={s.location}>
+          {task.date}
+          {''}at{''}
+          {task.time}
+        </li>
       </div>
-      <li className={s.time}>{task.date}</li>
+
       <div className={s.buttonContainer}>
         <button className={s.buttonEdit}>Edit</button>
         <button

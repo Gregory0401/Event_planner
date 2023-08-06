@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import s from './CreateEvent.module.css';
 import { NavLink } from 'react-router-dom';
 // import Example from 'popupDate';
+// import { DatePicker } from './DatePicker/DatePicker';
 
 function CreateEvent({
   handleSubmit,
@@ -43,6 +44,31 @@ function CreateEvent({
   // const handleChangeTime = e => {
   //   setTime(e.target.value);
   // };
+  // const toggleDataPicker = () => {
+  //   const form = document.getElementById('form');
+  //   const dateInput = form.querySelector('#date');
+
+  //   if (showDatePicker) {
+  //     dateInput.blur();
+  //   } else {
+  //     dateInput.focus();
+  //   }
+
+  //   setShowDatePicker(prevState => !prevState);
+  // };
+  // const handleDateChange = date => {
+  //   setStartDate(date);
+  // };
+  // const handleSaveDate = () => {
+  //   const selectedDate = convertDateFormat(startDate);
+  //   setDate(selectedDate);
+  //   setShowDatePicker(false);
+  // };
+
+  // const handleCloseCalendar = () => {
+  //   setShowDatePicker(false);
+  // };
+
   return (
     <div className={s.container}>
       <NavLink to="/" className={s.link}>
