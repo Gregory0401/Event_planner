@@ -130,6 +130,7 @@ function App() {
       category: category,
       priority: priority,
     };
+    setCard([newTask]);
     setTasks([newTask]);
     console.log(editCard.name);
   }
