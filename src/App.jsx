@@ -23,33 +23,61 @@ function App() {
   function handleChangeTime(e) {
     setTime(e.target.value);
   }
+  function handleChangeTimeEdit(e) {
+    setTime(e.target.value);
+  }
   function handleChangeLocation(e) {
+    setLocation(e.target.value);
+  }
+  function handleChangeLocationEdit(e) {
     setLocation(e.target.value);
   }
   function handleChange(e) {
     setName(e.target.value);
   }
-
+  function handleChangeEdit(e) {
+    setName(e.target.value);
+    console.log(55);
+    console.log(name);
+  }
   function handleChangeDate(e) {
+    setDate(e.target.value);
+  }
+  function handleChangeDateEdit(e) {
     setDate(e.target.value);
   }
   function handleChangeDescription(e) {
     setDescription(e.target.value);
   }
+  function handleChangeDescriptionEdit(e) {
+    setDescription(e.target.value);
+  }
   function handleChangeCategory(e) {
     setCategory(e.target.value);
-    // console.log(category);
+  }
+  function handleChangeCategoryEdit(e) {
+    setCategory(e.target.value);
   }
   function handleChangePriority(e) {
     setPriority(e.target.value);
-    // console.log(priority);
+  }
+  function handleChangePriorityEdit(e) {
+    setPriority(e.target.value);
   }
   function handleSubmitEdit(e) {
     e.preventDefault();
-    // addEditTask(name, date, time, location, description, category, priority);
-    console.log(name, date, time, location, description, category, priority);
-    console.log(123);
+    addEditTask(
+      editCard,
+      name,
+      date,
+      time,
+      location,
+      description,
+      category,
+      priority
+    );
   }
+
   function handleSubmit(e) {
     e.preventDefault();
     addTask(name, date, time, location, description, category, priority);
@@ -67,8 +95,7 @@ function App() {
     location,
     description,
     category,
-    priority,
-    formatMonthYear
+    priority
   ) {
     const newTask = {
       id: 'todo-' + nanoid(),
@@ -79,45 +106,40 @@ function App() {
       description: description,
       category: category,
       priority: priority,
-      completed: false,
-      formatMonthYear: formatMonthYear,
     };
     setTasks([...tasks, newTask]);
   }
 
-  // function addEditTask(
-  //   name,
-  //   date,
-  //   time,
-  //   location,
-  //   description,
-  //   category,
-  //   priority
-  // ) {
-  // const newTask = {
-  //   id: 'todo-' + nanoid(),
-  //   name: name,
-  //   date: date,
-  //   time: time,
-  //   location: location,
-  //   description: description,
-  //   category: category,
-  //   priority: priority,
-  //   completed: false,
-  //   formatMonthYear: formatMonthYear,
-  // };
-  // setTasks([...tasks, newTask]);
-  //   console.log(name, date, time, location, description, category, priority);
-  // }
+  function addEditTask(
+    editCard,
+    name,
+    date,
+    time,
+    location,
+    description,
+    category,
+    priority
+  ) {
+    const newTask = {
+      id: editCard.id,
+      name: name,
+      date: date,
+      time: time,
+      location: location,
+      description: description,
+      category: category,
+      priority: priority,
+    };
+    setTasks([newTask]);
+    console.log(editCard.name);
+  }
 
   function deleteTask(id) {
     const remainingTasks = tasks.filter(task => id !== task.id);
     setTasks(remainingTasks);
-    console.log(id);
   }
 
   const editTask = task => {
-    // const editingTask = tasks.filter(task => id === task.id);
     setEditCard(task);
   };
 
@@ -190,7 +212,13 @@ function App() {
             <EditView
               editCard={editCard}
               handleSubmitEdit={handleSubmitEdit}
-              // handleChange2={handleChange2}
+              handleChangeDescriptionEdit={handleChangeDescriptionEdit}
+              handleChangeEdit={handleChangeEdit}
+              handleChangeDateEdit={handleChangeDateEdit}
+              handleChangeTimeEdit={handleChangeTimeEdit}
+              handleChangeLocationEdit={handleChangeLocationEdit}
+              handleChangeCategoryEdit={handleChangeCategoryEdit}
+              handleChangePriorityEdit={handleChangePriorityEdit}
             />
           }
         />

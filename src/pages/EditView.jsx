@@ -5,24 +5,23 @@ import React, { useState } from 'react';
 function EditView({
   editCard,
   handleSubmitEdit,
-  handleChange,
-  handleChangeDate,
-  handleChangeDescription,
+  handleChangeEdit,
+  handleChangeDateEdit,
+  handleChangeDescriptionEdit,
   name,
   date,
   time,
   location,
-  handleChangeTime,
+  handleChangeTimeEdit,
   description,
-  handleChangePriority,
-  handleChangeCategory,
-  handleChangeLocation,
+  handleChangePriorityEdit,
+  handleChangeCategoryEdit,
+  handleChangeLocationEdit,
 }) {
   const [isVisible, setIsVisible] = useState(false);
   const [isVisiblePriority, setIsVisiblePriority] = useState(false);
   const [selectedValue, setSelectedValue] = useState('');
   const [selectedValueCategory, setSelectedValueCategory] = useState('');
-  // const [name2, setName2] = useState(name);
 
   const open_priority = () => {
     setIsVisiblePriority(prevState => !prevState);
@@ -36,25 +35,6 @@ function EditView({
   const val2 = event => {
     setSelectedValueCategory(event.target.value);
   };
-
-  // function handleChange(e) {
-  //   setName2(e.target.value);
-  //   console.log(name2);
-  // }
-
-  // function handleSubmitEdit(e) {
-  //   e.preventDefault();
-  //   addEditTask(name2, date, time, location, description, category, priority);
-  //   console.log(
-  //     name,
-  //     date,
-  //     time,
-  //     location,
-  //     description,
-  //     selectedValue,
-  //     selectedValueCategory
-  //   );
-  // }
 
   return (
     <div className={s.container}>
@@ -77,7 +57,7 @@ function EditView({
               autoComplete="off"
               defaultValue={editCard.name}
               value={name}
-              onChange={handleChange}
+              onChange={handleChangeEdit}
               placeholder="write a task name"
             />
           </li>
@@ -93,7 +73,7 @@ function EditView({
               autoComplete="off"
               defaultValue={editCard.description}
               value={description}
-              onChange={handleChangeDescription}
+              onChange={handleChangeDescriptionEdit}
             ></textarea>
           </li>
           <li className={s.item}>
@@ -105,7 +85,7 @@ function EditView({
               autoComplete="off"
               defaultValue={editCard.date}
               value={date}
-              onChange={handleChangeDate}
+              onChange={handleChangeDateEdit}
               placeholder="write a date "
             />
           </li>
@@ -118,7 +98,7 @@ function EditView({
                 name="time"
                 defaultValue={editCard.time}
                 value={time}
-                onChange={handleChangeTime}
+                onChange={handleChangeTimeEdit}
                 className={s.input}
               />
             </div>
@@ -133,11 +113,11 @@ function EditView({
               autoComplete="off"
               defaultValue={editCard.location}
               value={location}
-              onChange={handleChangeLocation}
+              onChange={handleChangeLocationEdit}
               placeholder="write a location"
             />
           </li>
-          <li onClick={handleChangeCategory} className={s.container_a}>
+          <li onClick={handleChangeCategoryEdit} className={s.container_a}>
             <p className={s.text}>Category:</p>
             <div className={s.start} onClick={open}>
               {selectedValueCategory.length > 0
@@ -195,6 +175,54 @@ function EditView({
                     Party
                   </label>
                 </div>
+                <div className={s.label_container} onChange={val2}>
+                  <label className={s.label}>
+                    <input
+                      type="radio"
+                      name="category"
+                      value="sport"
+                      className={s.input_c}
+                      onChange={open}
+                    />
+                    Sport
+                  </label>
+                </div>
+                <div className={s.label_container} onChange={val2}>
+                  <label className={s.label}>
+                    <input
+                      type="radio"
+                      name="category"
+                      value="party"
+                      className={s.input_c}
+                      onChange={open}
+                    />
+                    Party
+                  </label>
+                </div>
+                <div className={s.label_container} onChange={val2}>
+                  <label className={s.label}>
+                    <input
+                      type="radio"
+                      name="category"
+                      value="workshop"
+                      className={s.input_c}
+                      onChange={open}
+                    />
+                    Workshop
+                  </label>
+                </div>
+                <div className={s.label_container} onChange={val2}>
+                  <label className={s.label}>
+                    <input
+                      type="radio"
+                      name="category"
+                      value="conference"
+                      className={s.input_c}
+                      onChange={open}
+                    />
+                    Conference
+                  </label>
+                </div>
               </div>
             )}
           </li>
@@ -208,7 +236,7 @@ function EditView({
               placeholder="change a picture"
             />
           </li>
-          <li onClick={handleChangePriority} className={s.container_a}>
+          <li onClick={handleChangePriorityEdit} className={s.container_a}>
             <p className={s.text}>Priority:</p>
             <div className={s.start} onClick={open_priority}>
               {selectedValue.length > 0 ? selectedValue : editCard.priority}
