@@ -163,10 +163,11 @@
   }
   .item {
     position: absolute;
+    box-sizing: border-box;
     top: 246px;
     left: 0;
     width: 302px;
-    height: 40px;
+    height: 50px;
     padding: 8px 5px 8px 5px;
     font-family: Poppins;
     font-size: 14px;
@@ -194,7 +195,7 @@
     height: 200px;
   }
   .card:hover .item {
-    top: 182px;
+    top: 162px;
   }
 }
 
