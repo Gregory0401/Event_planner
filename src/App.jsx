@@ -126,7 +126,7 @@ function App() {
       date: date.length > 0 ? date : editCard.date,
       time: time.length > 0 ? time : editCard.name,
       location: location.length > 0 ? location : editCard.location,
-      description: time.description > 0 ? time : editCard.description,
+      description: description.length > 0 ? description : editCard.description,
       category: category.length > 0 ? category : editCard.category,
       priority: priority.length > 0 ? priority : editCard.priority,
     };
@@ -162,7 +162,7 @@ function App() {
 
   return (
     <>
-      <AppBar />
+      <AppBar tasks={tasks} />
       <div>{detailsEvent}</div>
       <Routes>
         <Route
