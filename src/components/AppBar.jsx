@@ -9,22 +9,22 @@ function AppBar(tasks) {
     setFilter(value);
   };
 
-  function getFilteredEvents() {
-    try {
-      if (!filter) {
-        return tasks;
-      }
-      const normalizedFilter = filter.toLocaleLowerCase();
-      const filteredEvents = tasks.filter(({ name }) => {
-        const normalizedName = name.toLocaleLowerCase();
-        const result = normalizedName.includes(normalizedFilter);
-        return result;
-      });
-      return filteredEvents;
-    } catch (e) {
-      console.log('error');
-    }
-  }
+  // function getFilteredEvents() {
+  //   try {
+  //     if (!filter) {
+  //       return tasks;
+  //     }
+  //     const normalizedFilter = filter.toLocaleLowerCase();
+  //     const filteredEvents = tasks.filter(({ name }) => {
+  //       const normalizedName = name.toLocaleLowerCase();
+  //       const result = normalizedName.includes(normalizedFilter);
+  //       return result;
+  //     });
+  //     return filteredEvents;
+  //   } catch (e) {
+  //     console.log('error');
+  //   }
+  // }
   // const eventsFiltered = getFilteredEvents();
   return (
     <>
