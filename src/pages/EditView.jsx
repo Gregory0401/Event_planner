@@ -192,18 +192,6 @@ function EditView({
                     <input
                       type="radio"
                       name="category"
-                      value="party"
-                      className={s.input_c}
-                      onChange={open}
-                    />
-                    Party
-                  </label>
-                </div>
-                <div className={s.label_container} onChange={val2}>
-                  <label className={s.label}>
-                    <input
-                      type="radio"
-                      name="category"
                       value="workshop"
                       className={s.input_c}
                       onChange={open}

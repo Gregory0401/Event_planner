@@ -26,9 +26,11 @@
   text-align: center;
 }
 .button {
+  box-sizing: border-box;
   width: 114px;
   height: 40px;
   padding: 10px 24px 10px 24px;
+  margin-top: 25px;
   border-radius: 8px;
   border: none;
   background-color: rgba(151, 71, 255, 1);
@@ -148,7 +150,7 @@
     background-color: rgba(255, 255, 255, 1);
   }
   .title {
-    height: 48px;
+    height: 24px;
     padding: 16px 16px 8px 16px;
     font-family: Poppins;
     font-size: 16px;
@@ -165,7 +167,7 @@
     left: 0;
     width: 302px;
     height: 40px;
-    padding: 8px 16px 8px 16px;
+    padding: 8px 5px 8px 5px;
     font-family: Poppins;
     font-size: 14px;
     font-weight: 400;
@@ -177,6 +179,7 @@
   }
   .description {
     height: 88px;
+    overflow: hidden;
     padding: 8px 16px 16px 16px;
     font-family: Poppins;
     font-size: 14px;
@@ -185,9 +188,10 @@
     letter-spacing: 0px;
     text-align: left;
     color: rgba(73, 69, 79, 1);
+    background-color: rgba(255, 255, 255, 1);
   }
   .card:hover .image {
-    height: 232px;
+    height: 200px;
   }
   .card:hover .item {
     top: 182px;
