@@ -5,6 +5,15 @@ function AppBar() {
     <>
       <div className={s.container}>
         <header className={s.header}>Event Planner</header>
+        <div className={s.search_container1}>
+          <div className={s.search_container}>
+            <input
+              placeholder="Search by keywords"
+              name="filter"
+              className={s.search}
+            />
+          </div>
+        </div>
       </div>
     </>
   );

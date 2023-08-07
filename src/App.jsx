@@ -119,8 +119,6 @@ function App() {
     priority
   ) {
     const remainingTasks = tasks.filter(task => editCard.id !== task.id);
-    // const item = tasks.find(item => item.id === editCard.id);
-    // console.log(remainingTasks);
     const itemUpdate = {
       id: editCard.id,
       name: name.length > 0 ? name : editCard.name,

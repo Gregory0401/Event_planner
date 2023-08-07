@@ -9,8 +9,6 @@
   }
   .container_nav {
     display: flex;
-    /* display: grid;
-    grid-template-rows: 30px 30px; */
   }
   .nav_button {
     margin-left: 16px;
