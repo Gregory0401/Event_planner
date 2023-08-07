@@ -132,7 +132,6 @@ function App() {
     };
     setCard([newTask]);
     setTasks([newTask]);
-    console.log(editCard.name);
   }
 
   function deleteTask(id) {
@@ -162,7 +161,7 @@ function App() {
 
   return (
     <>
-      <AppBar tasks={tasks} />
+      <AppBar />
       <div>{detailsEvent}</div>
       <Routes>
         <Route
