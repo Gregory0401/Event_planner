@@ -37,8 +37,6 @@ function App() {
   }
   function handleChangeEdit(e) {
     setName(e.target.value);
-    console.log(55);
-    console.log(name);
   }
   function handleChangeDate(e) {
     setDate(e.target.value);
@@ -120,18 +118,22 @@ function App() {
     category,
     priority
   ) {
-    const newTask = {
+    const remainingTasks = tasks.filter(task => editCard.id !== task.id);
+    // const item = tasks.find(item => item.id === editCard.id);
+    // console.log(remainingTasks);
+    const itemUpdate = {
       id: editCard.id,
       name: name.length > 0 ? name : editCard.name,
       date: date.length > 0 ? date : editCard.date,
-      time: time.length > 0 ? time : editCard.name,
+      time: time.length > 0 ? time : editCard.time,
       location: location.length > 0 ? location : editCard.location,
       description: description.length > 0 ? description : editCard.description,
       category: category.length > 0 ? category : editCard.category,
       priority: priority.length > 0 ? priority : editCard.priority,
     };
-    setCard([newTask]);
-    setTasks([newTask]);
+    setCard([itemUpdate]);
+
+    setTasks([...remainingTasks, itemUpdate]);
   }
 
   function deleteTask(id) {
