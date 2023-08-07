@@ -158,18 +158,6 @@ function CreateEvent({
                 <div className={s.label_container} onChange={val2}>
                   <label className={s.label}>
                     <input
-                      className={s.input_c}
-                      type="radio"
-                      name="category"
-                      value="party"
-                      onChange={open}
-                    />
-                    Party
-                  </label>
-                </div>
-                <div className={s.label_container} onChange={val2}>
-                  <label className={s.label}>
-                    <input
                       type="radio"
                       name="category"
                       value="sport"
