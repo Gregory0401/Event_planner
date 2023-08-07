@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Event_planner/static/css/main.f1bc7af7.css",
-    "main.js": "/Event_planner/static/js/main.6feb1dc9.js",
+    "main.js": "/Event_planner/static/js/main.2b3f6dfa.js",
     "static/media/Geo Wave 22.png": "/Event_planner/static/media/Geo Wave 22.2d87802889d8ca9566dc.png",
     "static/media/Rectangle 344.png": "/Event_planner/static/media/Rectangle 344.e182941aee82afc24bc0.png",
     "static/media/Rectangle 350.png": "/Event_planner/static/media/Rectangle 350.e6471c09a609f3feadd1.png",
@@ -12,10 +12,10 @@
     "static/media/Rectangle 345.png": "/Event_planner/static/media/Rectangle 345.05d70f7ce1374aaf254b.png",
     "index.html": "/Event_planner/index.html",
     "main.f1bc7af7.css.map": "/Event_planner/static/css/main.f1bc7af7.css.map",
-    "main.6feb1dc9.js.map": "/Event_planner/static/js/main.6feb1dc9.js.map"
+    "main.2b3f6dfa.js.map": "/Event_planner/static/js/main.2b3f6dfa.js.map"
   },
   "entrypoints": [
     "static/css/main.f1bc7af7.css",
-    "static/js/main.6feb1dc9.js"
+    "static/js/main.2b3f6dfa.js"
   ]
 }
