@@ -122,13 +122,13 @@ function App() {
   ) {
     const newTask = {
       id: editCard.id,
-      name: name,
-      date: date,
-      time: time,
-      location: location,
-      description: description,
-      category: category,
-      priority: priority,
+      name: name.length > 0 ? name : editCard.name,
+      date: date.length > 0 ? date : editCard.date,
+      time: time.length > 0 ? time : editCard.name,
+      location: location.length > 0 ? location : editCard.location,
+      description: time.description > 0 ? time : editCard.description,
+      category: category.length > 0 ? category : editCard.category,
+      priority: priority.length > 0 ? priority : editCard.priority,
     };
     setCard([newTask]);
     setTasks([newTask]);
