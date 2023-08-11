@@ -1,105 +1,43 @@
-# React homework template
+**Read in another language: [Українська](README.md), [English](README.en.md).**
 
-This project was created with
-[Create React App](https://github.com/facebook/create-react-app). To get
-acquainted and configure additional features
-[refer to documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h1 align="center">Events planner</h1>
 
-## Creating a repository by template
+[![Repository Size](https://img.shields.io/github/repo-size/Yana-Palam/event-planner?style=<style>&color=<color>)](https://github.com/Yana-Palam/event-planner)
+![GitHub watchers](https://img.shields.io/github/watchers/Yana-Palam/event-planner?style=social)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/Yana-Palam/event-planner)
+![GitHub language count](https://img.shields.io/github/languages/count/Yana-Palam/event-planner)
+![GitHub top language](https://img.shields.io/github/languages/top/Yana-Palam/event-planner)
 
-Use this GoIT repository as a template for creating a repository
-of your project. To use it just tap the `«Use this template»` button and choose
-`«Create a new repository»` option, as you can see on the image below.
+<h2>Description of the application</h2>
+<ul>
+<li>The application has pages: Home, Create, Details, Edit</li>
+<li>The Homr page contains events cards</li>
+<li>The Create page has a form for creating a new event</li>
+<li>The Details page displays a description of the selected event</li>
+<li>The Edit page allows you to edit the selected event</li>
+<li>The application has the ability to filter event cards by category</li>
+<li>Sorting of events is also available: by name, by priority and by event date</li>
+<li>The Tweets page has a Back button that takes you to the main page</li>
+<li>If the user entered using a non-existent route, he is redirected to the home page</li>
+</ul>
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+<h2>Technology Stack</h2>
+<ul>
+<li>JavaScript</li>
+<li>ReactJS</li>
+<li>Redux Toolkit</li>
+<li>React Router</li>
+<li>React Hooks</li>
+<li>Axios</li>
+<li>Mockapi.io</li>
+<li>Styled Components</li>
+<li>Formik</li>
+</ul>
 
-The page for creating a new repository will open on the next step. Fill out
-the Name field and make sure the repository is public, then click
-`«Create repository from template»` button.
-
-![Creating repo from a template step 2](./assets/template-step-2.png)
-
-You now have a personal project repository, having a repository-template file 
-and folder structure. After that, you can work with it as you would with any 
-other private repository: clone it on your computer, write code, commit, and 
-send it to GitHub.
-
-## Preparing for coding
-
-1. Make sure you have an LTS version of Node.js installed on your computer.
-   [Download and install](https://nodejs.org/en/) if needed.
-2. Install the project's base dependencies with the `npm install` command.
-3. Start development mode by running the `npm start` command.
-4. Go to [http://localhost:3000](http://localhost:3000) in your browser. This
-   page will automatically reload after saving changes to the project files.
-
-## Deploy
-
-The production version of the project will automatically be linted, built, and
-deployed to GitHub Pages, in the `gh-pages` branch, every time the `main` branch
-is updated. For example, after a direct push or an accepted pull request. To do
-this, you need to edit the `homepage` field in the `package.json` file,
-replacing `your_username` and `your_repo_name` with your own, and submit the
-changes to GitHub.
-
-```json
-"homepage": "https://your_username.github.io/your_repo_name/"
-```
-
-Next, you need to go to the settings of the GitHub repository (`Settings` >
-`Pages`) and set the distribution of the production version of files from the
-`/root` folder of the `gh-pages` branch, if this was not done automatically.
-
-![GitHub Pages settings](./assets/repo-settings.png)
-
-### Deployment status
-
-The deployment status of the latest commit is displayed with an icon next to its
-ID.
-
-- **Yellow color** - the project is being built and deployed.
-- **Green color** - deployment completed successfully.
-- **Red color** - an error occurred during linting, build or deployment.
-
-More detailed information about the status can be viewed by clicking on the
-icon, and in the drop-down window, follow the link `Details`.
-
-![Deployment status](./assets/deploy-status.png)
-
-### Live page
-
-After some time, usually a couple of minutes, the live page can be viewed at the
-address specified in the edited `homepage` property. For example, here is a link
-to a live version for this repository
-[https://goitacademy.github.io/react-homework-template](https://goitacademy.github.io/react-homework-template).
-
-If a blank page opens, make sure there are no errors in the `Console` tab
-related to incorrect paths to the CSS and JS files of the project (**404**). You
-most likely have the wrong value for the `homepage` property in the
-`package.json` file.
-
-### Routing
-
-If your application uses the `react-router-dom` library for routing, you must
-additionally configure the `<BrowserRouter>` component by passing the exact name
-of your repository in the `basename` prop. Slashes at the beginning and end of
-the line are required.
-
-```jsx
-<BrowserRouter basename="/your_repo_name/">
-  <App />
-</BrowserRouter>
-```
-
-## How it works
-
-![How it works](./assets/how-it-works.png)
-
-1. After each push to the `main` branch of the GitHub repository, a special
-   script (GitHub Action) is launched from the `.github/workflows/deploy.yml`
-   file.
-2. All repository files are copied to the server, where the project is
-   initialized and linted and built before deployment.
-3. If all steps are successful, the built production version of the project
-   files is sent to the `gh-pages` branch. Otherwise, the script execution log
-   will indicate what the problem is.
+<h2>Implementation of the project</h2>
+<ul>
+<li>The project is developed using the React library</li>
+<li>The project is built using create-react-app</li>
+<li>Used Redux Toolkit library for state management</li>
+<li>Created your own personal backend for development using the mockapi.io UI service</li>
+</ul>
