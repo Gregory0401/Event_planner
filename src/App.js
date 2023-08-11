@@ -1,22 +1,22 @@
-import "./App.css";
+import './App.css';
 import {
   createBrowserRouter,
   Navigate,
   RouterProvider,
-} from "react-router-dom";
-import React, { Suspense } from "react";
-import Layout from "./components/Layout/Layout";
-import HomePage from "./pages/HomePage/HomePage";
-import CreatePage from "./pages/CreatePage/CreatePage";
-import DetailsPage from "./pages/DetailsPage/DetailsPage";
-import EditPage from "./pages/EditPage/EditPage";
-import Loader from "./components/Loader/Loader";
+} from 'react-router-dom';
+import React, { Suspense } from 'react';
+import Layout from './components/Layout/Layout';
+import HomePage from './pages/HomePage/HomePage';
+import CreatePage from './pages/CreatePage/CreatePage';
+import DetailsPage from './pages/DetailsPage/DetailsPage';
+import EditPage from './pages/EditPage/EditPage';
+import Loader from './components/Loader/Loader';
 
 function App() {
   const router = createBrowserRouter(
     [
       {
-        path: "/",
+        path: '/',
         element: <Layout />,
         children: [
           {
@@ -28,7 +28,7 @@ function App() {
             ),
           },
           {
-            path: "/events/:eventId",
+            path: '/events/:eventId',
             element: (
               <Suspense fallback={<Loader />}>
                 <DetailsPage />
@@ -36,7 +36,7 @@ function App() {
             ),
           },
           {
-            path: "/create",
+            path: '/create',
             element: (
               <Suspense fallback={<Loader />}>
                 <CreatePage />
@@ -44,7 +44,7 @@ function App() {
             ),
           },
           {
-            path: "/events/:eventId/edit",
+            path: '/events/:eventId/edit',
             element: (
               <Suspense fallback={<Loader />}>
                 <EditPage />
@@ -52,14 +52,14 @@ function App() {
             ),
           },
           {
-            path: "/*",
+            path: '/*',
             element: <Navigate to="/" replace />,
           },
         ],
       },
     ],
     {
-      basename: "/event-planner",
+      basename: '/Event_planner',
     }
   );
 
