@@ -2,14 +2,6 @@
 
 <h1 align="center">Events planner</h1>
 
-[![Repository Size](https://img.shields.io/github/repo-size/Yana-Palam/event-planner?style=<style>&color=<color>)](https://github.com/Yana-Palam/event-planner)
-![GitHub watchers](https://img.shields.io/github/watchers/Yana-Palam/event-planner?style=social)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/w/Yana-Palam/event-planner)
-![GitHub language count](https://img.shields.io/github/languages/count/Yana-Palam/event-planner)
-![GitHub top language](https://img.shields.io/github/languages/top/Yana-Palam/event-planner)
-
-<h2 align="center"><a  href='https://yana-palam.github.io/event-planner/'>Live demo</a></h2>
-
 <h2>Description of the application</h2>
 <ul>
 <li>The application has pages: Home, Create, Details, Edit</li>
