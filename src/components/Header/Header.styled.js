@@ -1,31 +1,31 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-import { device } from "../../utils/device";
+import { device } from '../../utils/device';
 
 export const HeaderWrap = styled.header`
   padding: 32px 0 24px;
-  border-bottom: ${(p) => p.theme.borders.thin} ${(p) => p.theme.colors.accent};
-  background-color: ${(p) => p.theme.colors.primaryBackground};
+  border-bottom: ${p => p.theme.borders.thin} ${p => p.theme.colors.accent};
+  background-color: ${p => p.theme.colors.primaryBackground};
 
   @media ${device.tabletOnly} {
     padding: 26px 0 18px;
   }
 
   @media ${device.desktop} {
-    padding: 22px 0;
+    padding: 22px 30px;
   }
 `;
 
 export const Logo = styled(Link)`
-  color: ${(p) => p.theme.colors.text.accent};
-  font-family: ${(p) => p.theme.fonts.logo};
-  font-size: ${(p) => p.theme.fontSizes.m};
-  line-height: ${(p) => p.theme.lineHeights.logo};
-  transition: color ${(p) => p.theme.animation.cubic};
+  color: ${p => p.theme.colors.text.accent};
+  font-family: ${p => p.theme.fonts.logo};
+  font-size: ${p => p.theme.fontSizes.m};
+  line-height: ${p => p.theme.lineHeights.logo};
+  transition: color ${p => p.theme.animation.cubic};
 
   &:hover {
-    color: ${(p) => p.theme.colors.hover};
+    color: ${p => p.theme.colors.hover};
   }
 `;
 

@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { device } from "../../utils/device";
-import bg from "../../assets/images/bg.svg";
+import styled from 'styled-components';
+import { device } from '../../utils/device';
+import bg from '../../assets/images/bg.svg';
 
 export const StyledMain = styled.main`
   background-image: url(${bg});
@@ -10,6 +10,6 @@ export const StyledMain = styled.main`
   padding: 40px 0 100px;
 
   @media ${device.desktop} {
-    padding: 60px 0;
+    padding: 60px 40px;
   }
 `;

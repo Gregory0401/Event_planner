@@ -2,6 +2,8 @@
 
 <h1 align="center">Events planner</h1>
 
+<img src="./public/screen.png" width="200" height="100" >
+
 [![Repository Size](https://img.shields.io/github/repo-size/Yana-Palam/event-planner?style=<style>&color=<color>)](https://github.com/Yana-Palam/event-planner)
 ![GitHub watchers](https://img.shields.io/github/watchers/Yana-Palam/event-planner?style=social)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/Yana-Palam/event-planner)
