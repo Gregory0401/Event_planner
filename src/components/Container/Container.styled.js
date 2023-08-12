@@ -1,21 +1,21 @@
-import styled from "styled-components";
-import { device } from "../../utils/device";
+import styled from 'styled-components';
+import { device } from '../../utils/device';
 
 const Container = styled.div`
   margin: 0 auto;
   padding: 0 24px;
 
   @media ${device.phabletOnly} {
-    width: 480px;
+    min-width: 380px;
   }
 
   @media ${device.tabletOnly} {
-    width: 768px;
+    min-width: 768px;
     padding: 0 40px;
   }
 
   @media ${device.desktop} {
-    width: 1280px;
+    min-width: 1200px;
     padding: 0;
   }
 `;

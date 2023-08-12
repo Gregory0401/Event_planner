@@ -7,9 +7,9 @@ export const StyledMain = styled.main`
   background-position: center;
   background-size: cover;
   min-height: 100vh;
-  padding: 40px 0 100px;
+  padding: 40px 0 50px;
 
   @media ${device.desktop} {
-    padding: 60px 40px;
+    padding: 60px 40px 0 40px;
   }
 `;
