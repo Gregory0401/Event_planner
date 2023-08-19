@@ -1,39 +1,26 @@
-**Читати іншою мовою: [Українська](README.md), [English](README.en.md).**
+<h1 align="center">Event planner</h1>
 
-<h1 align="center">Events planner</h1>
+<img src="./image/screen.png" width="500" height="250" >
 
-<img src="./public/screen.png" width="500" height="250" >
+<p>Application for planning events. You can create an event and enter all the data about it. Also implemented filter events by several criteria and the ability to edit the event.The application is also adapted for mobile devices.</p>
 
-<h2>Опис додатку</h2>
+<h2>Description of the application</h2>
 <ul>
-<li>Додаток має сторінки: Home, Create, Details, Edit</li>
-<li>Сторінка Home містить картки запланованих подій</li>
-<li>На сторінці Create є форма для створення нової події</li>
-<li>На сторінці Details відображається опис обраної події</li>
-<li>Сторінка Edit надає можливість редагувати обрану подію</li>
-<li>В додатку є можливість фільтрувати картки подій за категорією</li>
-<li>Також доступне сортування подій: за назвою, за пріоритетом та за датою події</li>
-<li>На всіх сторінках є кнопка Back, яка веде на головну сторінку</li>
-<li>Якщо користувач зайшов за неіснуючим маршрутом, його перенаправляє на домашню сторінку</li>
+<li>The application has pages: Home, Create, Details, Edit</li>
+<li>The Homr page contains events cards</li>
+<li>The Create page has a form for creating a new event</li>
+<li>The Details page displays a description of the selected event</li>
+<li>The Edit page allows you to edit the selected event</li>
+<li>The application has the ability to filter event cards by category</li>
+<li>Sorting of events is also available: by name, by priority and by event date</li>
+<li>The Tweets page has a Back button that takes you to the main page</li>
+<li>If the user entered using a non-existent route, he is redirected to the home page</li>
 </ul>
 
-<h2>Стек технологій</h2>
+<h2>Used technology</h2>
 <ul>
 <li>JavaScript</li>
-<li>ReactJS</li>
-<li>Redux Toolkit</li>
+<li>React</li>
 <li>React Router Dom</li>
-<li>React Hooks</li>
-<li>Axios</li>
-<li>Mockapi.io</li>
-<li>Styled Components</li>
-<li>Formik</li>
-</ul>
-
-<h2>Реалізація проекту</h2>
-<ul>
-<li>Проект розроблений за допомогою бібліотеки React</li>
-<li>Проект зібраний за допомогою create-react-app</li>
-<li>Використана бібліотека Redux Toolkit для управління станом</li>
-<li>Створено свій персональний бекенд для розробки за допомогою UI-сервісу mockapi.io</li>
+<li>CSS Modules</li>
 </ul>

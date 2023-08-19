@@ -1,0 +1,37 @@
+.link {
+  text-decoration: none;
+  color: rgb(100, 100, 101);
+  margin-right: 30px;
+  cursor: pointer;
+  text-shadow: 5px 5px 20px rgb(53, 51, 51), 5px 5px 20px rgb(174, 151, 1);
+  transition-property: color, text-shadow;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+.link:hover,
+.link:focus {
+  color: rgb(239, 239, 244);
+  text-shadow: 10px 15px 30px rgb(255, 255, 255);
+}
+.link:last-child {
+  margin-right: 0;
+}
+.activeLink {
+  color: rgb(232, 27, 20);
+}
+@media Screen and (min-width: 320px) {
+  .nav {
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+@media Screen and (min-width: 768px) {
+  .nav {
+    width: 400px;
+    margin-left: 50px;
+  }
+  .link {
+    font-size: 18px;
+  }
+}

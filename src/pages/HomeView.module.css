@@ -1,0 +1,145 @@
+@media Screen and (min-width: 320px) {
+  .containerM {
+    display: block;
+    padding: 40px 24px 40px 24px;
+  }
+  .container_nav {
+    display: flex;
+  }
+  .nav_button {
+    margin-left: 16px;
+  }
+  .nav {
+    display: flex;
+  }
+  .text {
+    text-align: center;
+    font-size: 36px;
+    color: rgb(100, 100, 101);
+    margin-top: 50px;
+  }
+  .h2 {
+    display: none;
+  }
+  .buttonAdd {
+    display: flex;
+    padding: 16px;
+    border-radius: 8px;
+    /* width: 56px;
+    height: 56px; */
+    border: none;
+    background-color: rgba(123, 97, 255, 1);
+    box-shadow: 2px 4px 9px 0px rgba(166, 141, 174, 0.28);
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
+  }
+  .buttonAdd:hover,
+  .buttonAdd:focus {
+    background-color: rgba(98, 67, 255, 1);
+  }
+  .link_button {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    width: 193px;
+    height: 56px;
+    border-radius: 8px;
+    padding: 16px, 12px, 16px, 12px;
+    background-color: rgba(151, 71, 255, 1);
+    cursor: pointer;
+  }
+  .buttonText {
+    display: none;
+  }
+  .plus {
+    width: 24px;
+    height: 24px;
+    background-image: url(../../image/plus.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .button_container {
+    list-style: none;
+  }
+  .nav {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+@media Screen and (min-width: 768px) {
+  .containerM {
+    width: 688px;
+    padding: 40px 40px 125px 40px;
+    margin: 0 auto;
+  }
+  .nav {
+    display: flex;
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 24px;
+  }
+
+  .containerCards {
+    width: 688px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+    margin-top: 25px;
+  }
+
+  .buttonText {
+    display: block;
+    margin-left: 20px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+  }
+  .button_container {
+    display: flex;
+    list-style: none;
+  }
+  .h2 {
+    display: inline;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+}
+@media Screen and (min-width: 1440px) {
+  .containerM {
+    box-sizing: border-box;
+    width: 1440px;
+    padding: 60px 80px 77px 80px;
+    position: relative;
+  }
+  .containerCards {
+    width: 1280px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 24px;
+    margin: 0;
+  }
+  .h2 {
+    margin: 0;
+  }
+  .nav {
+    margin-bottom: 40px;
+    display: flex;
+  }
+}

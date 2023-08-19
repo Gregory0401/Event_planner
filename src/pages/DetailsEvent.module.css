@@ -1,0 +1,322 @@
+.high {
+  color: rgba(255, 43, 119, 1);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.medium {
+  color: rgba(226, 163, 0, 1);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.low {
+  color: rgba(107, 212, 117, 1);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.link {
+  text-decoration: none;
+}
+.button {
+  box-sizing: border-box;
+  width: 114px;
+  height: 40px;
+  padding: 10px 24px 10px 24px;
+  margin-top: 25px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(151, 71, 255, 1);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+.button:hover,
+.button:focus {
+  background-color: rgba(98, 67, 255, 1);
+}
+.span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+@media Screen and (min-width: 320px) {
+  .card {
+    position: relative;
+    width: 232px;
+    height: 480px;
+    border-radius: 12px;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 2px 4px 9px 0px rgba(166, 141, 174, 0.28);
+    background-color: rgba(254, 252, 255, 1);
+  }
+  .button {
+    margin-left: 102px;
+    margin-right: 0;
+  }
+  .music {
+    width: 232px;
+    height: 296px;
+    background-image: url(../../image/Rectangle\ 345.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .party {
+    width: 232px;
+    height: 296px;
+    background-image: url(../../image/Rectangle\ 344.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .image {
+    height: 296px;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+  }
+  .art {
+    width: 232px;
+    height: 296px;
+    background-image: url(../../image/Rectangle\ 330.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .business {
+    width: 232px;
+    height: 296px;
+    background-image: url(../../image/Rectangle\ 347.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .workshop {
+    width: 232px;
+    height: 296px;
+    background-image: url(../../image/Rectangle\ 346.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .conference {
+    width: 232px;
+    height: 296px;
+    background-image: url(../../image/Rectangle\ 348.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .sport {
+    width: 232px;
+    height: 296px;
+    background-image: url(../../image/Rectangle\ 350.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .info {
+    position: absolute;
+    height: 22px;
+    top: 12px;
+    left: 12px;
+    display: flex;
+  }
+  .category {
+    height: 22px;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    margin-right: 12px;
+    color: rgba(123, 97, 255, 1);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    box-shadow: 4px 5px 9px 0px rgba(166, 141, 174, 0.28);
+  }
+  .priority {
+    height: 22px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .title {
+    height: 24px;
+    padding: 16px 16px 8px 16px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(28, 27, 31, 1);
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .item {
+    position: absolute;
+    box-sizing: border-box;
+    top: 246px;
+    left: 0;
+    width: 302px;
+    height: 50px;
+    padding: 8px 5px 8px 5px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(123, 97, 255, 1);
+    background-color: rgba(255, 255, 255, 0.8);
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+  }
+
+  .description {
+    height: 88px;
+    overflow: hidden;
+    padding: 8px 16px 16px 16px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(73, 69, 79, 1);
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .card:hover .image,
+  .card:focus .image {
+    height: 200px;
+  }
+
+  .card:hover .item,
+  .card:focus .item {
+    top: 162px;
+  }
+  .spanLocation {
+    margin-left: 20px;
+  }
+}
+
+@media Screen and (min-width: 768px) {
+  .card {
+    width: 332px;
+    height: 480px;
+    margin: 0;
+  }
+  .button {
+    margin-left: 202px;
+    margin-right: 0;
+  }
+  .containerM {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-gap: 20px;
+    gap: 20px;
+  }
+
+  .art {
+    width: 332px;
+    height: 296px;
+  }
+  .conference {
+    width: 332px;
+    height: 296px;
+  }
+  .workshop {
+    width: 332px;
+    height: 296px;
+  }
+  .sport {
+    width: 332px;
+    height: 296px;
+  }
+  .business {
+    width: 332px;
+    height: 296px;
+  }
+  .party {
+    width: 332px;
+    height: 296px;
+  }
+  .music {
+    width: 332px;
+    height: 296px;
+  }
+  .item {
+    width: 332px;
+  }
+  .spanLocation {
+    margin-left: 80px;
+  }
+}
+@media Screen and (min-width: 1280px) {
+  .containerM {
+    padding: 30px 40px 30px 40px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr;
+  }
+  .card {
+    width: 302px;
+    height: 480px;
+    margin: 0;
+    padding: 0;
+  }
+  .button {
+    margin-left: 172px;
+    margin-right: 0;
+  }
+  .art {
+    width: 302px;
+    height: 296px;
+  }
+  .business {
+    width: 302px;
+    height: 296px;
+  }
+  .party {
+    width: 302px;
+    height: 296px;
+  }
+  .music {
+    width: 302px;
+    height: 296px;
+  }
+
+  .item {
+    width: 302px;
+  }
+  .conference {
+    width: 302px;
+    height: 296px;
+  }
+  .workshop {
+    width: 302px;
+    height: 296px;
+  }
+  .sport {
+    width: 302px;
+    height: 296px;
+  }
+}
