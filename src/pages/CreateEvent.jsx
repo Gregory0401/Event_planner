@@ -50,33 +50,33 @@ function CreateEvent({
   };
 
   const blurHandler = e => {
-    setNameValid(true);
+    e.target.value.length === 0 && setNameValid(true);
     setTimeout(() => {
       setNameValid(false);
     }, 2000);
   };
 
   const blurHandlerDescription = e => {
-    setDescriptionValid(true);
+    e.target.value.length === 0 && setDescriptionValid(true);
     setTimeout(() => {
       setDescriptionValid(false);
     }, 2000);
   };
   const blurHandlerDate = e => {
-    setDateValid(true);
+    e.target.value.length === 0 && setDateValid(true);
     setTimeout(() => {
       setDateValid(false);
     }, 2000);
   };
 
   const blurHandlerTime = e => {
-    setTimeValid(true);
+    e.target.value.length === 0 && setTimeValid(true);
     setTimeout(() => {
       setTimeValid(false);
     }, 2000);
   };
   const blurHandlerLocation = e => {
-    setLocationValid(true);
+    e.target.value.length === 0 && setLocationValid(true);
     setTimeout(() => {
       setLocationValid(false);
     }, 2000);
